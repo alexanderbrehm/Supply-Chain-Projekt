@@ -1,0 +1,10 @@
+{
+  "depot": 351,
+  "n_candidates": 640,
+  "n_routes_pool": 159060,
+  "upper_bound": 2420402.729999998,
+  "status": "kOptimal",
+  "gap": 0.0,
+  "runtime_s": 618.2968837969984,
+  "total_elapsed_s": 618.4125634760003
+}

@@ -1,0 +1,57 @@
+  pool: 100/640 warehouses, 13683 routes
+  pool: 200/640 warehouses, 20543 routes
+  pool: 300/640 warehouses, 69075 routes
+  pool: 400/640 warehouses, 125241 routes
+  pool: 500/640 warehouses, 142902 routes
+  pool: 600/640 warehouses, 155876 routes
+pool=159060 (20.1s)
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+MILP: 150 stores, 640 warehouses, 159060 routes, 17424 assignment vars, 18364 constraints
+before HiGHS run
+LP has 18364 rows; 177274 cols; 810240 nonzeros
+Coefficient ranges:
+  Matrix  [1e+00, 2e+02]
+  Cost    [6e+01, 2e+05]
+  Bound   [1e+00, 3e+00]
+  RHS     [0e+00, 0e+00]
+Presolving model
+18364 rows, 177273 cols, 810239 nonzeros 0s
+Dependent equations search running on 150 equations with time limit of 9.00s
+Dependent equations search removed 0 rows and 0 nonzeros in 0.02s (limit = 9.00s)
+18214 rows, 177123 cols, 809939 nonzeros 1s
+Presolve reductions: rows 18214(-150); columns 177123(-151); nonzeros 809939(-301) 
+Solving the presolved LP
+Using dual simplex solver
+  Iteration        Objective     Infeasibilities num(sum)
+          0    -1.6576818519e+06 Ph1: 639(659.812); Du: 639(1.65768e+06) 1.7s
+       1483    -3.6713326957e+06 Pr: 0(0); Du: 0(7.71252e-10) 2.5s
+
+Performed postsolve
+Solving the original LP from the solution after postsolve
+
+Model status        : Optimal
+Simplex   iterations: 1483
+Objective value     :  3.6713326957e+06
+P-D objective error :  1.9025566292e-16
+HiGHS run time      :          2.74
+after HiGHS run
+before getSolution
+after getSolution
+LP bound: 3.671333 M, status=kOptimal, runtime=36.0s
+LP=3334545.695736, runtime=36.0s, duals=150/17424
+pricing start 149
+pricing 149: kOptimal, rc=-4655.4939, selected=1, runtime=3.9s
+pricing start 122
+pricing 122: kOptimal, rc=2325.7569, selected=2, runtime=0.9s
+pricing start 575
+pricing 575: kOptimal, rc=11348.4481, selected=9, runtime=31.3s
+pricing start 84
+pricing 84: kTimeLimit, rc=0.0000, selected=0, runtime=63.6s
+pricing start 419
+pricing 419: kTimeLimit, rc=0.0000, selected=0, runtime=63.2s
+pricing start 271
+pricing 271: kTimeLimit, rc=0.0000, selected=0, runtime=60.2s
+pricing start 379
+pricing 379: kTimeLimit, rc=0.0000, selected=0, runtime=64.4s
+saved /home/alexander/Schreibtisch/supply chain management/experiments/full_exact/pricing_probe.json

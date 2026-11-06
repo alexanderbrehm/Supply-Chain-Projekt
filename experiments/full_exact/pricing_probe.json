@@ -1,0 +1,121 @@
+{
+  "lp_bound": 3334545.695736081,
+  "lp_runtime_s": 36.04053809900006,
+  "n_routes_pool": 159060,
+  "warehouses": [
+    {
+      "warehouse": 149,
+      "status": "kOptimal",
+      "reduced_cost": -4655.4938571428565,
+      "objective": -2703.947666666667,
+      "n_stores": 7,
+      "n_selected": 1,
+      "stores": [
+        152
+      ],
+      "order": [
+        152
+      ],
+      "runtime_s": 3.8585048690001713,
+      "mip_gap": 0.0
+    },
+    {
+      "warehouse": 122,
+      "status": "kOptimal",
+      "reduced_cost": 2325.7568888897804,
+      "objective": -6476.776000000892,
+      "n_stores": 12,
+      "n_selected": 2,
+      "stores": [
+        121,
+        187
+      ],
+      "order": [
+        121,
+        187
+      ],
+      "runtime_s": 0.8650503579999622,
+      "mip_gap": 0.0
+    },
+    {
+      "warehouse": 575,
+      "status": "kOptimal",
+      "reduced_cost": 11348.448060611445,
+      "objective": -13541.181949500335,
+      "n_stores": 24,
+      "n_selected": 9,
+      "stores": [
+        538,
+        540,
+        544,
+        545,
+        549,
+        552,
+        553,
+        555,
+        579
+      ],
+      "order": [
+        552,
+        549,
+        540,
+        538,
+        553,
+        555,
+        545,
+        544,
+        579
+      ],
+      "runtime_s": 31.290621252999927,
+      "mip_gap": 0.0
+    },
+    {
+      "warehouse": 84,
+      "status": "kTimeLimit",
+      "reduced_cost": 0.0,
+      "objective": -13478.379870845738,
+      "n_stores": 31,
+      "n_selected": 0,
+      "stores": [],
+      "order": [],
+      "runtime_s": 63.612754186000075,
+      "mip_gap": 0.0
+    },
+    {
+      "warehouse": 419,
+      "status": "kTimeLimit",
+      "reduced_cost": 0.0,
+      "objective": -18456.435207514704,
+      "n_stores": 34,
+      "n_selected": 0,
+      "stores": [],
+      "order": [],
+      "runtime_s": 63.21452570800011,
+      "mip_gap": 0.0
+    },
+    {
+      "warehouse": 271,
+      "status": "kTimeLimit",
+      "reduced_cost": 0.0,
+      "objective": -13158.18586786661,
+      "n_stores": 41,
+      "n_selected": 0,
+      "stores": [],
+      "order": [],
+      "runtime_s": 60.15601281799991,
+      "mip_gap": 0.0
+    },
+    {
+      "warehouse": 379,
+      "status": "kTimeLimit",
+      "reduced_cost": 0.0,
+      "objective": -9479.198857587638,
+      "n_stores": 60,
+      "n_selected": 0,
+      "stores": [],
+      "order": [],
+      "runtime_s": 64.38481479699999,
+      "mip_gap": 0.0
+    }
+  ]
+}

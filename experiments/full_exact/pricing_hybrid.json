@@ -1,0 +1,68 @@
+{
+  "note": "best exact method per warehouse; DFS uses only negative-prize stores; 271 not proven within 300 s",
+  "rows": [
+    {
+      "warehouse": 149,
+      "reachable": 7,
+      "method": "MTZ-MIP",
+      "status": "kOptimal",
+      "runtime_s": 0.2,
+      "objective": null,
+      "reduced_cost": -4655.4939
+    },
+    {
+      "warehouse": 122,
+      "reachable": 12,
+      "method": "MTZ-MIP",
+      "status": "kOptimal",
+      "runtime_s": 1.4,
+      "objective": null,
+      "reduced_cost": 2325.7569
+    },
+    {
+      "warehouse": 575,
+      "reachable": 24,
+      "method": "MTZ-MIP",
+      "status": "kOptimal",
+      "runtime_s": 10.5,
+      "objective": -13541.1819,
+      "reduced_cost": 11348.4481
+    },
+    {
+      "warehouse": 84,
+      "reachable": 31,
+      "method": "DFS",
+      "status": "kOptimal",
+      "runtime_s": 220.8543,
+      "objective": -11974.2789,
+      "reduced_cost": 10374.4015
+    },
+    {
+      "warehouse": 419,
+      "reachable": 34,
+      "method": "DFS",
+      "status": "kOptimal",
+      "runtime_s": 50.7863,
+      "objective": -14400.2701,
+      "reduced_cost": 13287.2703
+    },
+    {
+      "warehouse": 271,
+      "reachable": 41,
+      "method": "SCIP-MIP",
+      "status": "kOptimal",
+      "runtime_s": 160.9451,
+      "objective": -12414.1001,
+      "reduced_cost": 11494.949
+    },
+    {
+      "warehouse": 379,
+      "reachable": 60,
+      "method": "DFS",
+      "status": "kOptimal",
+      "runtime_s": 37.5542,
+      "objective": -2526.8408,
+      "reduced_cost": 2526.8408
+    }
+  ]
+}

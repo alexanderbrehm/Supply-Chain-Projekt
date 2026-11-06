@@ -1,0 +1,23 @@
+Loaded 671 regions; 150 stores with positive margin.
+Total positive store margin: 4.780 M EUR/year
+
+Baseline network
+  depot:            379
+  satellites:       [81, 149, 274, 419, 582]
+  stores opened:    120 of 150
+  stores unserved:  30  (margin 0.436 M EUR)
+  trips per week:   60
+  route km / week:  13150
+  annual profit:    2.312 M EUR
+
+Breakdown
+  gross_profit              9.236 M EUR
+  store_costs               4.892 M EUR
+  depot_cost                0.337 M EUR
+  satellite_costs           0.399 M EUR
+  truck_costs               0.295 M EUR
+  transporter_costs         1.000 M EUR
+  profit                    2.312 M EUR
+
+Elapsed: 170.0 s
+saved results/baseline.json

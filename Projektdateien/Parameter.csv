@@ -1,0 +1,10 @@
+Parameter,Value
+lkw_lieferungen_pro_woche_pro_zwischenlager,1
+lkw_fixkosten_pro_fahrt,400
+lkw_kosten_pro_km,1.1
+transporter_lieferungen_pro_woche_pro_markt,3
+transporter_fixkosten_pro_route,200
+transporter_kosten_pro_km,0.55
+transporter_schichtdauer,8
+transporter_servicezeit_pro_markt,30
+transporter_durchschnittsgeschwindigkeit_kmh,50

@@ -1,0 +1,13 @@
+{
+  "candidates_file": "results/milp_200.json",
+  "n_candidates": 202,
+  "depot": 379,
+  "upper_bound": 2400886.571999999,
+  "status": "kOptimal",
+  "mip_gap": 0.0,
+  "runtime_s": 97.84793411499959,
+  "n_routes_pool": 103063,
+  "n_variables": 111372,
+  "n_constraints": 8459,
+  "bound_is_dual": true
+}

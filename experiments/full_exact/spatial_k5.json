@@ -1,0 +1,12 @@
+{
+  "k": 5,
+  "force_reference": false,
+  "n_candidates": 316,
+  "n_routes_pool": 93092,
+  "upper_bound": 2401030.1380000096,
+  "status": "kOptimal",
+  "gap": 0.0,
+  "runtime_s": 477.18240353400006,
+  "total_elapsed_s": 477.29379594600005,
+  "reference_profit": 2422985.0979999998
+}

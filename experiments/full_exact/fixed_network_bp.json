@@ -1,0 +1,9 @@
+{
+  "iteration_count": 1,
+  "initial_routes": 1219,
+  "new_routes": [],
+  "final_routes": 1219,
+  "final_master_objective": 936596.3099999998,
+  "fractional_lambda": 0,
+  "current_transporter_cost": 936596.3099999999
+}

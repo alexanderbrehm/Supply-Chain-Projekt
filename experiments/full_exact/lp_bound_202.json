@@ -1,0 +1,8 @@
+{
+  "objective": 3156385.8141447683,
+  "status": "kOptimal",
+  "runtime_s": 15.969859225999244,
+  "n_routes": 103063,
+  "n_variables": 111372,
+  "n_constraints": 8459
+}

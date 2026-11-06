@@ -1,0 +1,11 @@
+initial fixed-network pool: 1219 routes
+iteration 1: master=936596.3100, pool=1219, time=0.1s
+  w=84: optimal, rc=-9615.1789, n=2, sel=1, time=0.0s
+  w=122: kOptimal, rc=-0.0000, n=0, sel=0, time=0.0s
+  w=271: optimal, rc=-10415.5856, n=1, sel=1, time=0.0s
+  w=379: kOptimal, rc=-0.0000, n=0, sel=0, time=0.0s
+  w=419: optimal, rc=-9147.5020, n=2, sel=1, time=0.0s
+  w=574: kOptimal, rc=-0.0000, n=0, sel=0, time=0.0s
+no negative-reduced-cost route found
+final master=936596.3100, fractional lambda=0
+saved /home/alexander/Schreibtisch/supply chain management/experiments/full_exact/fixed_network_bp.json

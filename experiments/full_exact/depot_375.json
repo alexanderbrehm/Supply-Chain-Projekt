@@ -1,0 +1,10 @@
+{
+  "depot": 375,
+  "n_candidates": 640,
+  "n_routes_pool": 159060,
+  "upper_bound": 2432179.9200501996,
+  "status": "kTimeLimit",
+  "gap": 0.01160662313385797,
+  "runtime_s": 924.8286075579999,
+  "total_elapsed_s": 924.9701558319994
+}

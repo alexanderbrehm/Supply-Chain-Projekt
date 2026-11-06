@@ -1,0 +1,6 @@
+fixed open set=[379, 84, 122, 271, 419, 574], pool=2413
+iteration 1: LP=3442740.6900, status=kOptimal, pool=2413, time=0.9s
+  w=379: kOptimal, rc=16117.1713, sel=5, time=0.5s
+  w=84: optimal, rc=31353.9720, sel=8, time=2.3s
+  w=122: optimal, rc=52499.9293, sel=1, time=0.0s
+  w=271: optimal, rc=32367.4760, sel=9, time=10.3s

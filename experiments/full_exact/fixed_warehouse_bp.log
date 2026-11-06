@@ -1,0 +1,12 @@
+fixed set=[379, 84, 122, 271, 419, 574], initial pool=2413
+iteration 1: LP=3005239.9607, pool=2413, time=0.3s
+  w=379: kOptimal, rc=16823.8364, sel=5, order=(346, 329, 266, 256, 260), time=0.8s
+  w=84: optimal, rc=34553.7268, sel=8, order=(62, 60, 56, 59, 57, 58, 66, 67), time=1.4s
+  w=122: optimal, rc=48348.9102, sel=1, order=(152,), time=0.0s
+  w=271: optimal, rc=27507.3920, sel=8, order=(271, 384, 280, 279, 256, 266, 260, 270), time=76.1s
+  w=419: timelimit, rc=19673.2384, sel=8, order=(408, 409, 402, 401, 405, 424, 360, 427), time=180.0s
+  w=574: optimal, rc=19125.2129, sel=6, order=(544, 546, 553, 549, 540, 543), time=0.7s
+iteration 2: LP=3005239.9607, pool=2418, time=0.4s
+  w=379: kOptimal, rc=17966.6658, sel=5, order=(346, 329, 266, 258, 272), time=0.9s
+  w=84: optimal, rc=32303.8795, sel=7, order=(79, 57, 71, 56, 61, 78, 76), time=2.6s
+  w=122: optimal, rc=48348.9102, sel=1, order=(152,), time=0.0s

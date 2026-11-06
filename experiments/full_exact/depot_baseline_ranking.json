@@ -1,0 +1,215 @@
+{
+  "elapsed_s": 6.954422286000408,
+  "top": [
+    {
+      "rank": 1,
+      "depot": 379,
+      "profit": 722019.1799999998,
+      "stores": 60,
+      "trips": 45
+    },
+    {
+      "rank": 2,
+      "depot": 351,
+      "profit": 719507.44,
+      "stores": 59,
+      "trips": 45
+    },
+    {
+      "rank": 3,
+      "depot": 375,
+      "profit": 715664.076,
+      "stores": 60,
+      "trips": 45
+    },
+    {
+      "rank": 4,
+      "depot": 349,
+      "profit": 699652.3780000001,
+      "stores": 58,
+      "trips": 45
+    },
+    {
+      "rank": 5,
+      "depot": 350,
+      "profit": 690856.3799999999,
+      "stores": 58,
+      "trips": 45
+    },
+    {
+      "rank": 6,
+      "depot": 380,
+      "profit": 684553.37,
+      "stores": 60,
+      "trips": 48
+    },
+    {
+      "rank": 7,
+      "depot": 376,
+      "profit": 658202.1279999998,
+      "stores": 60,
+      "trips": 48
+    },
+    {
+      "rank": 8,
+      "depot": 290,
+      "profit": 641012.654,
+      "stores": 41,
+      "trips": 18
+    },
+    {
+      "rank": 9,
+      "depot": 274,
+      "profit": 636692.79,
+      "stores": 41,
+      "trips": 18
+    },
+    {
+      "rank": 10,
+      "depot": 261,
+      "profit": 630082.638,
+      "stores": 41,
+      "trips": 18
+    },
+    {
+      "rank": 11,
+      "depot": 271,
+      "profit": 629759.152,
+      "stores": 41,
+      "trips": 18
+    },
+    {
+      "rank": 12,
+      "depot": 371,
+      "profit": 628936.854,
+      "stores": 60,
+      "trips": 48
+    },
+    {
+      "rank": 13,
+      "depot": 270,
+      "profit": 627318.752,
+      "stores": 41,
+      "trips": 18
+    },
+    {
+      "rank": 14,
+      "depot": 256,
+      "profit": 603208.486,
+      "stores": 41,
+      "trips": 18
+    },
+    {
+      "rank": 15,
+      "depot": 372,
+      "profit": 592925.6619999999,
+      "stores": 59,
+      "trips": 51
+    },
+    {
+      "rank": 16,
+      "depot": 287,
+      "profit": 589269.286,
+      "stores": 41,
+      "trips": 21
+    },
+    {
+      "rank": 17,
+      "depot": 284,
+      "profit": 587164.8020000001,
+      "stores": 41,
+      "trips": 21
+    },
+    {
+      "rank": 18,
+      "depot": 347,
+      "profit": 586160.9339999999,
+      "stores": 59,
+      "trips": 51
+    },
+    {
+      "rank": 19,
+      "depot": 259,
+      "profit": 585972.0119999999,
+      "stores": 41,
+      "trips": 21
+    },
+    {
+      "rank": 20,
+      "depot": 258,
+      "profit": 585255.406,
+      "stores": 41,
+      "trips": 21
+    },
+    {
+      "rank": 21,
+      "depot": 257,
+      "profit": 584110.742,
+      "stores": 41,
+      "trips": 21
+    },
+    {
+      "rank": 22,
+      "depot": 266,
+      "profit": 583636.714,
+      "stores": 41,
+      "trips": 21
+    },
+    {
+      "rank": 23,
+      "depot": 352,
+      "profit": 581215.4779999999,
+      "stores": 59,
+      "trips": 51
+    },
+    {
+      "rank": 24,
+      "depot": 337,
+      "profit": 577489.566,
+      "stores": 60,
+      "trips": 51
+    },
+    {
+      "rank": 25,
+      "depot": 295,
+      "profit": 575366.6919999999,
+      "stores": 41,
+      "trips": 21
+    },
+    {
+      "rank": 26,
+      "depot": 267,
+      "profit": 574230.388,
+      "stores": 41,
+      "trips": 21
+    },
+    {
+      "rank": 27,
+      "depot": 81,
+      "profit": 574065.854,
+      "stores": 29,
+      "trips": 18
+    },
+    {
+      "rank": 28,
+      "depot": 301,
+      "profit": 570343.356,
+      "stores": 41,
+      "trips": 21
+    },
+    {
+      "rank": 29,
+      "depot": 276,
+      "profit": 565124.1680000001,
+      "stores": 42,
+      "trips": 24
+    },
+    {
+      "rank": 30,
+      "depot": 289,
+      "profit": 565089.676,
+      "stores": 41,
+      "trips": 21
+    }
+  ]
+}

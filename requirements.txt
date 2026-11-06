@@ -1,0 +1,7 @@
+highspy==1.15.1
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.9
+pytest>=8.0
+python-pptx>=1.0
+pyscipopt>=6.0

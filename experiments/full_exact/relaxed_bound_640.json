@@ -1,0 +1,13 @@
+{
+  "candidates_file": "experiments/full_exact/candidates_640.json",
+  "n_candidates": 640,
+  "depot": 379,
+  "upper_bound": 2422985.098,
+  "status": "kOptimal",
+  "mip_gap": 0.0,
+  "runtime_s": 566.6496386350009,
+  "n_routes_pool": 159060,
+  "n_variables": 177274,
+  "n_constraints": 18364,
+  "bound_is_dual": true
+}

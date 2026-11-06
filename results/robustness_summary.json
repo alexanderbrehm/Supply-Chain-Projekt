@@ -1,0 +1,36 @@
+{
+  "pessimistisch": {
+    "existing_profit": 1463574.4078000002,
+    "optimized_profit": 1526843.1748000002,
+    "delta": 63268.76699999999,
+    "existing_stores": 115,
+    "optimized_stores": 90,
+    "existing_satellites": 5,
+    "optimized_satellites": 4,
+    "existing_depot": 379,
+    "optimized_depot": 379,
+    "network_identical": false,
+    "mip_gap": 0.07336298989521944,
+    "status": "kTimeLimit",
+    "runtime_s": 1236.3650426020004,
+    "n_routes_pool": 116337,
+    "candidate_count": 640
+  },
+  "optimistisch": {
+    "existing_profit": 3382395.7881999994,
+    "optimized_profit": 3382395.7881999994,
+    "delta": 0.0,
+    "existing_stores": 115,
+    "optimized_stores": 115,
+    "existing_satellites": 5,
+    "optimized_satellites": 5,
+    "existing_depot": 379,
+    "optimized_depot": 379,
+    "network_identical": true,
+    "mip_gap": 0.038219129052751606,
+    "status": "kTimeLimit",
+    "runtime_s": 1285.331628168,
+    "n_routes_pool": 216905,
+    "candidate_count": 640
+  }
+}

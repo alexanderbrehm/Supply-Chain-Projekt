@@ -1,0 +1,19 @@
+{
+  "optimistisch": {
+    "existing_profit": 3334221.8148000017,
+    "optimized_profit": 3339728.524000001,
+    "delta": 5506.709199999459,
+    "existing_stores": 111,
+    "optimized_stores": 114,
+    "existing_satellites": 5,
+    "optimized_satellites": 5,
+    "existing_depot": 379,
+    "optimized_depot": 379,
+    "network_identical": false,
+    "mip_gap": 0.0048441059141751995,
+    "status": "kOptimal",
+    "runtime_s": 726.9409937989999,
+    "n_routes_pool": 85230,
+    "candidate_count": 109
+  }
+}

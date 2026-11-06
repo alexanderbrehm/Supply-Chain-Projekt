@@ -1,0 +1,44 @@
+{
+  "pessimistisch": {
+    "existing_profit": 1467551.3292000005,
+    "optimized_profit": 1526843.1748000002,
+    "delta": 59291.84559999965,
+    "existing_stores": 111,
+    "optimized_stores": 90,
+    "existing_satellites": 5,
+    "optimized_satellites": 4,
+    "existing_depot": 379,
+    "optimized_depot": 379,
+    "network_identical": false,
+    "mip_gap": 0.0,
+    "status": "kOptimal",
+    "runtime_s": 474.772372173,
+    "n_routes_pool": 75770,
+    "candidate_count": 202
+  },
+  "optimistisch": {
+    "existing_profit": 3334221.8148000017,
+    "optimized_profit": 3339728.524000001,
+    "delta": 5506.709199999459,
+    "existing_stores": 111,
+    "optimized_stores": 114,
+    "existing_satellites": 5,
+    "optimized_satellites": 5,
+    "existing_depot": 379,
+    "optimized_depot": 379,
+    "network_identical": false,
+    "mip_gap": 0.012640890716201279,
+    "status": "kTimeLimit",
+    "runtime_s": 942.779670033,
+    "n_routes_pool": 135923,
+    "candidate_count": 202,
+    "cross_check": {
+      "candidate_count": 109,
+      "optimized_profit": 3339728.524000001,
+      "mip_gap": 0.0048441059141751995,
+      "status": "kOptimal",
+      "runtime_s": 726.9409937989999,
+      "same_network_profit": true
+    }
+  }
+}

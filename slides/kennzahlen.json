@@ -1,0 +1,73 @@
+{
+  "baseline": {
+    "gross_profit": 9235848.0,
+    "store_costs": 4892277.0,
+    "depot_cost": 336787.0,
+    "satellite_costs": 398894.0,
+    "truck_costs": 295308.83200000005,
+    "transporter_costs": 1000104.3000000002,
+    "profit": 2312476.868,
+    "n_stores": 120,
+    "n_satellites": 5,
+    "n_routes": 60,
+    "n_trips_per_week": 60,
+    "route_km_per_week": 13150.5,
+    "annual_route_km": 683826.0
+  },
+  "optimized": {
+    "gross_profit": 9069395.0,
+    "store_costs": 4690058.0,
+    "depot_cost": 336787.0,
+    "satellite_costs": 398053.0,
+    "truck_costs": 284915.592,
+    "transporter_costs": 936596.3099999999,
+    "profit": 2422985.0979999998,
+    "n_stores": 115,
+    "n_satellites": 5,
+    "n_routes": 57,
+    "n_trips_per_week": 57,
+    "route_km_per_week": 12020.850000000008,
+    "annual_route_km": 625084.2000000004
+  },
+  "bridge": [
+    [
+      "Rohertrag",
+      -166453.0
+    ],
+    [
+      "Marktkosten",
+      202219.0
+    ],
+    [
+      "Depotkosten",
+      0.0
+    ],
+    [
+      "Satellitenkosten",
+      841.0
+    ],
+    [
+      "Lkw-Kosten",
+      10393.240000000049
+    ],
+    [
+      "Transporterkosten",
+      63507.99000000022
+    ]
+  ],
+  "route_size_distribution": {
+    "1": 3,
+    "2": 3,
+    "3": 9,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 12,
+    "8": 9,
+    "9": 12
+  },
+  "n_patterns": 19,
+  "n_candidates": 640,
+  "mip_gap": 0.0,
+  "runtime_s": 567.6864211110005
+}

@@ -460,6 +460,7 @@ def main() -> None:
         for name, s in robustness.items():
             items.append(
                 f"{name.capitalize()}: Netz {'identisch' if s['network_identical'] else 'verändert'}; "
+                f"Depot {s.get('existing_depot', '–')} → {s.get('optimized_depot', '–')}, "
                 f"Märkte {s['existing_stores']:.0f} → {s['optimized_stores']}, "
                 f"Satelliten {s['existing_satellites']:.0f} → {s['optimized_satellites']}; "
                 f"Delta {_eur(s['delta'], sign=True)}; Status {s.get('status', '–')}, Gap {_pct(s.get('mip_gap', 0))}."

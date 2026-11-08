@@ -76,39 +76,36 @@ Depot 379 und bleibt als Vergleich erhalten.
 ### Robustheit
 
 ```bash
-.venv/bin/python run_robustness.py --base results/milp_640.json --initial-dir results/archive_202 --time-limit 1200
+.venv/bin/python run_robustness.py --base results/milp_best.json --free-depot --time-limit 1200
 ```
 
-Das Zeitlimit ist nötig, weil beide 640er-Szenarioläufe das Limit erreichen:
-pessimistisch nach 1.236 s (Gap 7,34 %), optimistisch nach 1.285 s (Gap 3,82 %).
-Mit `--initial-dir results/archive_202` wird, falls besser, die alte
-202er-Szenariolösung als Warmstart verwendet.
+Das Skript bewertet das bestehende Netz (Depot 664) unter beiden Szenarien und
+baut für jedes Szenario einen **szenariospezifischen Routenpool** über alle
+Lagerregionen auf (inkl. der durch den geänderten Rohertrag neu positiven
+Märkte).  Dann wird zweimal reoptimiert: bei festem Depot 664 (mit dem
+bestehenden Netz als Warmstart) und mit `--free-depot` über alle Depots per
+LP-Schranken und exakten MILPs (`scm/depot_search.py`).  Alle Läufe enden mit
+`kOptimal`, Gap 0; Gesamtlaufzeit rund 18 min.  Mit `--only pessimistisch`
+bzw. `--only optimistisch` lässt sich ein Szenario einzeln rechnen.
+Ergebnisse: `results/robustness_*.json`, `results/robustness_summary.json`,
+Log `results/robustness_best.log`.
 
-Das Skript bewertet das bestehende Netz unter beiden Szenarien und baut für
-jedes Szenario einen **szenariospezifischen Routenpool** auf (inkl. der durch
-den geänderten Rohertrag neu positiven Märkte).  Das bestehende Netz wird als
-Warmstart übergeben, damit die Reoptimierung nie schlechter als das bestehende
-Netz startet.  Mit `--only pessimistisch` bzw. `--only optimistisch` lässt sich
-ein Szenario einzeln rechnen; `--mip-gap` setzt die Abbruchtoleranz.  Optional
-baut `--depot-search` die analytische Baseline auf den Szenariodaten neu und
-testet deren Depot.  Ergebnisse: `results/robustness_*.json` und
-`results/robustness_summary.json`.
+| Szenario | Bestehend (Depot 664) | Reoptimiert, Depot 664 | Reoptimiert, Depot frei | Delta | Depot | Märkte | Satelliten |
+|---|---:|---:|---:|---:|---|---:|---|
+| Pessimistisch | 1.576.277 EUR | 1.645.327 EUR | **1.651.768 EUR** | +75.491 EUR | 664 → 419 | 117 → 88 | 5 → 3 (81, 331, 574) |
+| Optimistisch | 3.526.282 EUR | 3.528.217 EUR | **3.528.217 EUR** | +1.935 EUR | 664 → 664 | 117 → 118 | 5 → 5 |
 
-| Szenario | Bestehend | Reoptimiert | Delta | Märkte | Satelliten | Status / Gap |
-|---|---:|---:|---:|---:|---:|---|
-| Pessimistisch | 1.463.574 EUR | 1.526.843 EUR | +63.269 EUR | 115 → 90 | 5 → 4 | `kTimeLimit`, 7,34 % |
-| Optimistisch | 3.382.396 EUR | 3.382.396 EUR | 0 EUR | 115 → 115 | 5 → 5 | `kTimeLimit`, 3,82 % |
+Unter dem pessimistischen Szenario lohnt sich ein deutlich kleineres Netz:
+88 statt 117 Märkte und nur drei Satelliten.  Der größte Teil des Gewinns
+(+69.050 EUR) kommt schon bei festem Depot aus dem Schließen unrentabler
+Märkte; der Wechsel auf Depot 419 bringt weitere 6.441 EUR.  Unter dem
+optimistischen Szenario bleibt Depot 664 optimal, nur ein Markt kommt hinzu.
+Das Referenznetz ist damit robust: Es bleibt in beiden Szenarien profitabel
+und liegt höchstens 4,6 % unter dem jeweiligen Szenariooptimum.
 
-Unter dem pessimistischen Szenario sinkt der Gewinn des 640er-Netzes auf
-1.463.574 EUR; die Reoptimierung findet mit 90 Märkten und 4 Satelliten
-1.526.843 EUR.  Der alte 202er-Lauf zertifizierte denselben Wert mit Gap 0 für
-seinen damaligen Pool; er liegt im Archiv `results/archive_202/`.
-
-Unter dem optimistischen Szenario bleibt das 640er-Netz unverändert
-(3.382.396 EUR).  Der Solver bestätigt es als beste gefundene Lösung, konnte
-im Zeitlimit aber keinen Gap-0-Beweis schließen.  Die historische
-109er-Gegenprobe zum alten 202er-Netz liegt in
-`results/archive_202/crosscheck_optimistic_109/`.
+Die früheren Szenarioläufe zum Netz mit Depot 379 (`kTimeLimit`, Gap 7,34 % bzw.
+3,82 %) liegen in `results/archive_640/`, die noch älteren 202er-Läufe in
+`results/archive_202/`.
 
 ### Tests
 
@@ -226,7 +223,7 @@ dieselbe Bewertung wie das extrahierte Netz.  Damit ist der 640er-Routenpool
 exakt gelöst.  Der ganzzahlige 640er-MILP-Lauf selbst erreichte nach 1.827,6 s
 nur `kTimeLimit` mit Gap 3,5685 %.
 
-Die Robustheitsergebnisse stehen in `results/robustness_summary.json`; die
+Die Robustheitsergebnisse (Abschnitt 1, „Robustheit“) stehen in `results/robustness_summary.json`; die
 Einzelresultate liegen in `results/robustness_pessimistisch.json` und
 `results/robustness_optimistisch.json`.  Das Skript `make_report.py` erzeugt daraus:
 

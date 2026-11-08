@@ -27,3 +27,27 @@ network identical to base: False
 === optimistisch: Rohertrag x1.10, km-Kosten x0.90 ===
 existing network: profit=3.5263 M EUR, stores=117, satellites=5
 scenario pool: 220909 routes (9.3s)
+  LP bounds: 50/665 depots (61s)
+  LP bounds: 100/665 depots (88s)
+  LP bounds: 150/665 depots (114s)
+  LP bounds: 200/665 depots (140s)
+  LP bounds: 250/665 depots (201s)
+  LP bounds: 300/665 depots (318s)
+  LP bounds: 350/665 depots (464s)
+  LP bounds: 400/665 depots (567s)
+  LP bounds: 450/665 depots (615s)
+  LP bounds: 500/665 depots (638s)
+  LP bounds: 550/665 depots (655s)
+  LP bounds: 600/665 depots (670s)
+  LP bounds: 650/665 depots (684s)
+  MILP depot 419: bound=3,458,254.94, profit=3,458,254.94, kOptimal, 42.9s
+fixed depot 664: 3.5282 M EUR; best depot 664: 3.5282 M EUR, certified=True
+re-optimised: profit=3.5282 M EUR, stores=118, satellites=[77, 122, 271, 419, 574], status=kOptimal, gap=0.00%, runtime=48.6s
+network identical to base: False
+
+summary saved to results/robustness_summary.json
+total elapsed: 1102.3s
+
+real	18m23.068s
+user	18m46.323s
+sys	0m1.346s

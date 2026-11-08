@@ -1,0 +1,25 @@
+route pool: 162227 routes for 671 warehouses (7.7s)
+  LP bounds: 50/665 depots (38s)
+  LP bounds: 100/665 depots (56s)
+  LP bounds: 150/665 depots (66s)
+  LP bounds: 200/665 depots (79s)
+  LP bounds: 250/665 depots (127s)
+  LP bounds: 300/665 depots (211s)
+  LP bounds: 350/665 depots (264s)
+  LP bounds: 400/665 depots (302s)
+  LP bounds: 450/665 depots (319s)
+  LP bounds: 500/665 depots (332s)
+  LP bounds: 550/665 depots (342s)
+  LP bounds: 600/665 depots (350s)
+  LP bounds: 650/665 depots (357s)
+  MILP depot 664: bound=2,551,279.42, profit=2,551,279.42, kOptimal, 31.3s
+
+best depot 664: profit=2,551,279.42 EUR, satellites=[77, 122, 271, 419, 574]
+stores=117, trips/week=57
+depots solved exactly: 1, certified over all depots: True
+total runtime 402.9s
+saved results/milp_best.json and results/depot_search.json
+
+real	6m43.531s
+user	6m42.769s
+sys	0m0.818s

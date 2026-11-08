@@ -170,7 +170,7 @@ def _add_table(
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--baseline", default="results/baseline.json")
-    ap.add_argument("--optimized", default="results/milp_640.json")
+    ap.add_argument("--optimized", default="results/milp_best.json")
     ap.add_argument("--robustness", default="results/robustness_summary.json")
     ap.add_argument("--out", default="slides/Mini-Supermarkt-Netz.pptx")
     args = ap.parse_args()
@@ -272,7 +272,7 @@ def main() -> None:
         [
             f"671 Regionen in Deutschland, davon {len(data.stores)} mit positivem Marktdeckungsbeitrag.",
             f"Summe der positiven Marktmargen: {_money(sum(data.margin(i) for i in data.stores))} pro Jahr.",
-            "Entscheidungen: Depot (Enumeration aller 671 Regionen), optionale Satelliten, geöffnete Märkte, Zuordnung und Wochenrouten.",
+            "Entscheidungen: Depot (alle 671 Regionen), optionale Satelliten, geöffnete Märkte, Zuordnung und Wochenrouten.",
             "Ziel: Jahresgewinn maximieren – Rohertrag minus Markt-, Lager-, Lkw- und Transporterkosten.",
             "Restriktion: jede Route ist eine Rundtour mit max. 8 h Fahr- plus Servicezeit.",
         ],
@@ -303,8 +303,8 @@ def main() -> None:
         slide,
         [
             "Baseline: alle 671 möglichen Depots mit Savings-Routing bewerten, dann Märkte streichen und Satelliten greedy ergänzen.",
-            "Optimierung: Set-Partitioning-MILP mit HiGHS – Satelliten, Märkte, Zuordnung und Routen werden bei festem Depot simultan entschieden.",
-            "Routenpool: Savings-Routen, Singletons, kurze Zweier-Routen; Jitter-Varianten optional (im 640er-Referenzlauf: 0).",
+            "Optimierung: Set-Partitioning-MILP mit HiGHS – Satelliten, Märkte, Zuordnung und Routen simultan; Depot per LP-Schranken über alle 671 Regionen.",
+            "Routenpool: Savings-Routen, Singletons, kurze Zweier-Routen für jede der 671 Regionen als Lager.",
             "Jeder Markt: genau 3 Besuche/Woche; Routenmultiplizität 0–3; eine Route kann also bis zu dreimal gefahren werden.",
             "Zwei-Stufen-Ansatz: schnelle, erklärbare Baseline als Referenz; MILP für die systematische Verbesserung.",
         ],
@@ -335,15 +335,15 @@ def main() -> None:
         slide,
         [
             "Variablen: y (Markt offen), z (Lager offen), a (Zuordnung), λ (Routenhäufigkeit 0–3).",
-            "Nebenbedingungen: 3 Besuche pro offenem Markt, genau eine Lagerzuordnung, Routen nur von offenen Lagern.",
-            f"Routenpool: {pool_label} Routen; Kandidaten: {len(optimized_raw.get('candidates', [])) or '–'} nicht-dominierte Lagerregionen (Pareto-Front; 31 dominiert).",
-            "Vergleich: 202 Kandidaten → 2,401; 640 (Referenz) → 2,423 Mio. EUR; 300er-Lauf 2,3 %.",
-            f"HiGHS-Status: {optimized_raw.get('status', '–')} (λ-Relaxation, Lösung ganzzahlig); MIP-Gap: {_pct(optimized_raw.get('mip_gap', 0))}; Laufzeit: {optimized_raw.get('runtime_s', 0):.0f} s.",
-            "Das Optimum gilt für den erzeugten Routenpool und die 640 nicht-dominierten Lagerkandidaten; das Depot wurde zuvor per Enumeration bestimmt.",
+            "Nebenbedingungen: 3 Besuche pro offenem Markt, genau eine Lagerzuordnung, Zuordnung nur zu offenen Lagern (a ≤ z).",
+            f"Routenpool: {pool_label} Routen; Lagerkandidaten: {len(optimized_raw.get('candidates', [])) or '–'} Regionen.",
+            "Starke Kopplung a ≤ z: LP-Schranke fällt von 3,16 auf 2,40 Mio. EUR (= Optimum, 202er-Pool).",
+            f"Depotwahl: LP-Schranke für jedes Depot, danach exaktes MILP; HiGHS-Status {optimized_raw.get('status', '–')}, Gap {_pct(optimized_raw.get('mip_gap', 0))}, Laufzeit {optimized_raw.get('runtime_s', 0):.0f} s.",
+            "Das Optimum gilt für den erzeugten Routenpool – über alle Depots und alle Lagerregionen.",
         ],
         size=18,
     )
-    _add_footer(slide, "Eine vollständige Enumeration aller Routen und aller 671 Lager ist NP-schwer.")
+    _add_footer(slide, "Offen bleibt nur der Routenpool: ein Beweis über alle Routen braucht Column Generation.")
     n_slides += 1
 
     # 7 network map
@@ -440,7 +440,7 @@ def main() -> None:
                 "Pessimistisch: Rohertrag −10 %, km-Kosten +10 %.",
                 "Optimistisch: Rohertrag +10 %, km-Kosten −10 %.",
                 "Fixkosten pro Fahrt/Route bleiben unverändert.",
-                f"MIP-Gap: {gap_text}; gleicher 640-Kandidatensatz.",
+                f"MIP-Gap: {gap_text}; Depot frei über alle Regionen.",
             ],
             left=8.1,
             top=4.1,
@@ -478,7 +478,7 @@ def main() -> None:
         _add_bullets(slide, items, size=17)
     else:
         _add_bullets(slide, ["Robustheitsergebnisse noch nicht vorhanden."], size=20)
-    _add_footer(slide, "Vergleich: bestehendes Netz vs. MILP-Reoptimierung auf Szenariodaten; Depot jeweils fix 379.")
+    _add_footer(slide, f"Vergleich: bestehendes Netz (Depot {optimized_net.depot}) vs. Reoptimierung auf Szenariodaten mit freiem Depot.")
     n_slides += 1
 
     # 12 conclusion
@@ -487,9 +487,9 @@ def main() -> None:
         slide,
         [
             f"Die Optimierung steigert den Jahresgewinn von {_money(baseline['profit'])} auf {_money(optimized['profit'])}.",
-            "Das Modell liefert für den Routenpool und die 640 nicht-dominierten Kandidaten ein zertifiziertes Optimum (Gap 0 %, 568 s).",
-            "Das Depot 379 wurde zuvor per Baseline-Enumeration über alle 671 Regionen bestimmt.",
-            "Grenze: Kein globaler Beweis über alle Routen und alle 671 Depots; der Routenpool bleibt eine Restriktion.",
+            f"Zertifiziertes Optimum für den Routenpool über alle 671 Depots und Lager (Gap 0 %, {optimized_raw.get('runtime_s', 0):.0f} s).",
+            f"Depot {optimized_net.depot} statt 379: Die Depotwahl ohne Satelliten (Baseline) führte in die Irre.",
+            "Grenze: Kein Beweis über alle theoretisch möglichen Routen; der Routenpool bleibt eine Restriktion.",
             "Nächste Schritte: Column Generation / Branch-and-Price, Kapazitäten, weitere Szenarien, interaktive Karte.",
         ],
         size=19,

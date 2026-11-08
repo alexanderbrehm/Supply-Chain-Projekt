@@ -9,7 +9,7 @@ gemeinsam geplant.  Als Solver wird **HiGHS** über `highspy` verwendet.
 Voraussetzungen: Python 3.12 und [`uv`](https://docs.astral.sh/uv/).
 
 ```bash
-cd "/home/alexander/Schreibtisch/supply chain management"
+cd supply-chain-projekt   # Ordner des geklonten Repos
 uv venv --python 3.12 .venv
 uv pip install --python .venv/bin/python -r requirements.txt
 ```
@@ -28,6 +28,23 @@ Die drei Eingabedateien liegen in `Projektdateien/`:
 
 Ergebnis: `results/baseline.json` (Netz + Gewinnaufschlüsselung).
 
+### Referenzlauf: Depotsuche über alle 671 Regionen
+
+```bash
+.venv/bin/python run_depot_search.py
+```
+
+Das Skript baut **einen** Routenpool für alle 671 Regionen als Lager
+(162.227 Routen, 8 s), löst für jedes mögliche Depot die LP-Relaxation des
+starken Modells (Schranke) und danach das MILP für die Depots in absteigender
+Schrankenreihenfolge, bis keine Schranke mehr über der besten Lösung liegt.
+Laufzeit rund 6,7 min.  Ergebnisse: `results/milp_best.json` (Netz,
+Zertifikat) und `results/depot_search.json` (Schranken aller Depots).
+
+**Ergebnis: Depot 664, Satelliten 77, 122, 271, 419, 574, 117 Märkte,
+57 Fahrten/Woche, 2.551.279 EUR Jahresgewinn – optimal für den Routenpool
+über alle Depots und alle Lagerregionen.**
+
 ### Sensitivitätslauf (202 Kandidaten) berechnen
 
 ```bash
@@ -45,7 +62,7 @@ Wichtige Optionen:
 | `--initial FILE` | Warmstart aus einem früheren Ergebnis |
 | `--out FILE` | Zielpfad der JSON-Ergebnisdatei |
 
-### 640er-Referenzlauf (exakter Pool-Beweis)
+### Historischer 640er-Lauf (Depot fest 379)
 
 ```bash
 .venv/bin/python run_proof.py
@@ -53,8 +70,8 @@ Wichtige Optionen:
 
 Das Skript löst die Relaxation mit stetigem `λ`, prüft die Ganzzahligkeit der
 Optimallösung, extrahiert das Netz und schreibt `results/milp_640.json`
-(Laufzeit rund 568 s).  Es ist der Referenzlauf; die 202er-Lösung bleibt als
-Sensitivität erhalten.
+(Laufzeit rund 568 s).  Er war die frühere Referenz bei fest vorgegebenem
+Depot 379 und bleibt als Vergleich erhalten.
 
 ### Robustheit
 
@@ -103,8 +120,9 @@ im Zeitlimit aber keinen Gap-0-Beweis schließen.  Die historische
 
 ### Entscheidungen
 
-* Depotregion `d` (genau eine) – **vorgelagert** per Enumeration aller 671
-  Regionen in der Baseline; das MILP optimiert bei festem Depot,
+* Depotregion `d` (genau eine) – über alle 671 Regionen: LP-Schranke je
+  Depot, danach exaktes MILP für jedes Depot, dessen Schranke die beste
+  Lösung noch schlagen könnte (`scm/depot_search.py`),
 * Satellitenregionen `S` (optional),
 * geöffnete Märkte `I_open`,
 * Zuordnung jedes geöffneten Marktes zu genau einem Lager,
@@ -153,11 +171,25 @@ Nebenbedingungen:
 Σ_{r ∋ i} λ_r = v · y_i                für jeden Markt i
 Σ_w a_{i,w} = y_i                      für jeden Markt i
 Σ_{r ∋ i, r aus w} λ_r ≤ v · a_{i,w}   für jedes Paar (i,w)
+a_{i,w} ≤ z_w                          für jedes Paar (i,w)   (starke Kopplung)
 Σ_{r aus w} λ_r ≤ M_w z_w              für jedes Lager w
 ```
 
 Dabei ist `M_w = v · |{i : i kommt in einer Route von w vor}|` eine gültige
 Obergrenze für die Fahrten von Lager `w`.
+
+Die **starke Kopplung** `a_{i,w} ≤ z_w` folgt aus dem ganzzahligen Modell und
+schneidet keine zulässige Lösung ab.  Sie ersetzt in der LP-Relaxation die
+schwache Big-M-Kopplung: Beim 202er-Pool fällt die LP-Schranke von
+3,156 auf 2,401 Mio. EUR – das ist exakt das ganzzahlige Optimum – und das MILP
+löst in 8 s statt 81 s.  `solve_milp(..., strong_linking=False)` rechnet die
+alte Formulierung.
+
+Die **Depotwahl** nutzt, dass der Routenpool nicht vom Depot abhängt: Eine
+Route gehört zu einem Lager, und das Depot ist nur das Lager, das immer offen
+ist, Depot- statt Satellitenkosten trägt und keinen Lkw-Pendel braucht.  Ein
+einziges LP-Modell wird daher für jedes Depot nur in Zielfunktion und
+Schranken der `z`-Variablen angepasst (rund 0,6 s pro Depot).
 
 Die Route `r` enthält eine Menge von Märkten; ihre Kosten sind die Rundtour
 vom Lager über diese Märkte zurück zum Lager (bis 13 Märkte exakt per
@@ -171,12 +203,21 @@ optionalen Jitter-Varianten erzeugt.
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Baseline | alle 671 Depots | Savings | 120 | 60 | 2.312.477 EUR | – | 170 s |
 | MILP 202 (Sensitivität) | 202 | 103.063 | 111 | 54 | 2.400.887 EUR | 0,00 % | 481 s |
-| **MILP 640 (Referenz)** | **640** | **159.060** | **115** | **57** | **2.422.985 EUR** | **0,00 %** | **568 s** |
+| MILP 640, Depot fest 379 | 640 | 159.060 | 115 | 57 | 2.422.985 EUR | 0,00 % | 568 s |
+| **Depotsuche (Referenz)** | **alle 671 Depots und Lager** | **162.227** | **117** | **57** | **2.551.279 EUR** | **0,00 %** | **403 s** |
 
-Der 640er-Lauf ist die Referenz: Er verbessert die Baseline um **110.508 EUR
-(+4,78 %)** und den 202er-Lauf um **22.099 EUR (+0,92 %)**.  Er nutzt 640
-nicht-dominierte Lagerregionen, 159.060 Routen, 115 Märkte und 57 Fahrten; die
-Satelliten sind 84, 122, 271, 419 und 574.
+Die Depotsuche ist die Referenz (`results/milp_best.json`): **Depot 664**,
+Satelliten **77, 122, 271, 419, 574**.  Sie verbessert die Baseline um
+**238.803 EUR (+10,33 %)** und den früheren 640er-Lauf mit Depot 379 um
+**128.294 EUR (+5,29 %)**.
+
+Warum war 379 falsch?  Die Baseline bewertet jedes Depot **ohne Satelliten**
+und ergänzt Satelliten erst danach.  Mit Satelliten ist ein Depot günstig,
+das selbst niedrige Depotkosten hat (664: 317.613 EUR statt 336.787 EUR) und
+nah an den Satelliten liegt.  Nach LP-Schranke liegen 318 der 665 nutzbaren
+Depots über dem Wert von 379; das LP für Depot 664 ist bereits ganzzahlig.
+Die zehn besten Schranken: 664 (2,551), 667 (2,550), 668 (2,547), 41 (2,544),
+419 (2,542), 665, 39, 22, 37, 253 Mio. EUR.
 
 Der 640er-Beweis wurde als Relaxation der Routenmultiplizitäten geführt:
 Markt-, Lager- und Zuordnungsvariablen bleiben binär, `λ` wird stetig.  HiGHS
@@ -196,8 +237,25 @@ Einzelresultate liegen in `results/robustness_pessimistisch.json` und
 
 ## 4. Optimalität – was bewiesen ist und was nicht
 
-Der 640er-Lauf liefert ein zertifiziertes Optimum für den **verwendeten
-Routenpool** und **alle 671 Lagerregionen** bei festem Depot 379:
+Die Depotsuche liefert ein zertifiziertes Optimum für den **verwendeten
+Routenpool** über **alle 671 Depots und alle 671 Lagerregionen**:
+
+* Für jedes der 665 nutzbaren Depots ist die LP-Schranke des starken Modells
+  berechnet (`results/depot_search.json`).  Sechs Regionen haben keine
+  zulässige Route und können kein Depot sein.
+* Die höchste Schranke hat Depot 664; sein MILP ergibt mit Gap 0 genau diesen
+  Wert.  Keine andere Schranke liegt darüber – kein anderes Depot kann also
+  besser sein.
+* Das Netz ist mit `scm.network.evaluate` (strenge Validierung) geprüft.
+
+Offen bleibt nur: **alle theoretisch möglichen Routen**.  Der Pool enthält
+162.227 heuristisch erzeugte Routen.  Da das starke LP fast immer ganzzahlig
+ist, würde Column Generation mit dem exakten Pricing aus `scm/pricing.py` an
+der Wurzel jetzt einen echten globalen Beweis liefern; das ist der nächste
+Schritt.
+
+Der frühere 640er-Lauf (Depot fest 379) war optimal für seinen Routenpool und
+alle 671 Lagerregionen bei diesem festen Depot:
 
 * 31 Regionen sind durch eine Lagerregion mit nicht höheren Fixkosten und
   nicht größeren Distanzen zu allen Märkten dominiert.  Für jede dominierte
@@ -209,20 +267,13 @@ Routenpool** und **alle 671 Lagerregionen** bei festem Depot 379:
   kandidatenvollständig; 443 nicht-dominierte Regionen fehlen dort.  Sie bleibt
   als Sensitivität dokumentiert.
 
-**Nicht bewiesen ist ein globales Optimum über alle theoretisch möglichen
-Routen und alle 671 Depots:**
+Für diesen Lauf galt noch:
 
-* Der Routenpool enthält 159.060 heuristisch erzeugte Routen, nicht alle
-  zulässigen Routen.  Eine vollständige Routenenumeration ist bei 150 Märkten
-  und 8-Stunden-Routen nicht darstellbar.
-* Das Depot 379 wird vorgelagert in der Baseline durch Enumeration aller 671
-  Regionen bestimmt; das MILP optimiert bei diesem festen Depot.  Ein
-  vollständiger Vergleich aller Depotalternativen mit exakten Schranken ist
-  nicht geführt.
-* Die LP-Relaxation des 202er-Modells liefert eine obere Schranke von
-  3,156 Mio. EUR und ist damit zu schwach für einen Beweis.
-* Ein vollständiger Beweis über alle Routen und Depots würde Branch-and-Price
-  mit exaktem Pricing oder eine vollständige Routenenumeration erfordern.
+* Das Depot 379 wurde vorgelagert in der Baseline bestimmt – das hat sich mit
+  der Depotsuche als um 128.294 EUR zu schlecht erwiesen.
+* Die LP-Relaxation der damaligen (schwachen) Formulierung lieferte beim
+  202er-Modell 3,156 Mio. EUR und war zu schwach für einen Beweis; mit der
+  starken Kopplung ist sie gleich dem Optimum.
 
 ### 4.1 Kandidatenvollständigkeit und 640er-Beweis
 
@@ -272,13 +323,15 @@ scm/
   routing.py       Savings, 2-opt, Held-Karp, Routenfeasibility
   baseline.py      Analytische Baseline + lokale Verbesserung
   routes_pool.py   Routenpool für das MILP
-  milp.py          Set-Partitioning-MILP mit HiGHS
+  milp.py          Set-Partitioning-MILP mit HiGHS (starke Kopplung a ≤ z)
+  depot_search.py  LP-Schranken je Depot + exakte Depotsuche
   pricing.py       Exaktes Pricing (Branch-and-Price-Prototyp)
   scenarios.py     Robustheitsszenarien und Repricing
   analysis.py      Gewinnbrücke, Netzkarte, Szenariovergleich
   io.py            JSON-Serialisierung
 run_baseline.py    Baseline ausführen
-run_milp.py        MILP ausführen
+run_depot_search.py Referenzlauf: Depotsuche über alle Regionen
+run_milp.py        MILP bei festem Depot ausführen
 run_proof.py       640er-Pool-Beweis reproduzieren
 run_robustness.py  Szenarien bewerten und reoptimieren
 make_report.py     Abbildungen und Präsentation erzeugen

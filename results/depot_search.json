@@ -1,0 +1,3351 @@
+{
+  "best_depot": 664,
+  "best_profit": 2551279.418,
+  "pool_size": 162227,
+  "runtime_s": 402.948912758,
+  "solved": [
+    {
+      "depot": 664,
+      "lp_bound": 2551279.4180000005,
+      "profit": 2551279.418,
+      "status": "kOptimal",
+      "mip_gap": 0.0,
+      "runtime_s": 31.261030778000077
+    }
+  ],
+  "unusable_depots": [
+    102,
+    103,
+    107,
+    108,
+    109,
+    110
+  ],
+  "bounds": [
+    {
+      "depot": 664,
+      "lp_bound": 2551279.4180000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 667,
+      "lp_bound": 2550412.6560000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 668,
+      "lp_bound": 2546853.150000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 41,
+      "lp_bound": 2544401.5680000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 419,
+      "lp_bound": 2542133.5960000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 665,
+      "lp_bound": 2536439.7613333343,
+      "n_fractional": 2
+    },
+    {
+      "depot": 39,
+      "lp_bound": 2526759.7140000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 22,
+      "lp_bound": 2525914.682,
+      "n_fractional": 0
+    },
+    {
+      "depot": 37,
+      "lp_bound": 2525046.7920000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 253,
+      "lp_bound": 2524566.4800000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 461,
+      "lp_bound": 2522384.8880000017,
+      "n_fractional": 0
+    },
+    {
+      "depot": 31,
+      "lp_bound": 2522360.474000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 21,
+      "lp_bound": 2521215.0760000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 666,
+      "lp_bound": 2520024.9000000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 20,
+      "lp_bound": 2519569.020000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 662,
+      "lp_bound": 2518483.610000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 44,
+      "lp_bound": 2518260.7780000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 669,
+      "lp_bound": 2516404.378000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 47,
+      "lp_bound": 2515796.4720000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 28,
+      "lp_bound": 2514073.870000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 43,
+      "lp_bound": 2513674.5220000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 249,
+      "lp_bound": 2513232.016000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 84,
+      "lp_bound": 2512624.1520000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 290,
+      "lp_bound": 2512561.2640000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 32,
+      "lp_bound": 2512317.598000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 51,
+      "lp_bound": 2511892.3540000017,
+      "n_fractional": 0
+    },
+    {
+      "depot": 29,
+      "lp_bound": 2509906.096,
+      "n_fractional": 0
+    },
+    {
+      "depot": 36,
+      "lp_bound": 2508892.204000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 40,
+      "lp_bound": 2508881.562000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 384,
+      "lp_bound": 2508494.3820000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 23,
+      "lp_bound": 2508486.8145000013,
+      "n_fractional": 7
+    },
+    {
+      "depot": 663,
+      "lp_bound": 2507524.4740000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 33,
+      "lp_bound": 2506672.094000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 42,
+      "lp_bound": 2505660.9900000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 271,
+      "lp_bound": 2504435.0520000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 30,
+      "lp_bound": 2504242.2780000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 38,
+      "lp_bound": 2503921.622,
+      "n_fractional": 0
+    },
+    {
+      "depot": 274,
+      "lp_bound": 2503897.918000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 649,
+      "lp_bound": 2502636.496000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 382,
+      "lp_bound": 2501550.614,
+      "n_fractional": 0
+    },
+    {
+      "depot": 454,
+      "lp_bound": 2501133.154000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 385,
+      "lp_bound": 2500689.8619999997,
+      "n_fractional": 0
+    },
+    {
+      "depot": 452,
+      "lp_bound": 2500321.702000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 18,
+      "lp_bound": 2500212.606,
+      "n_fractional": 0
+    },
+    {
+      "depot": 25,
+      "lp_bound": 2500203.66,
+      "n_fractional": 0
+    },
+    {
+      "depot": 19,
+      "lp_bound": 2499737.8880000017,
+      "n_fractional": 5
+    },
+    {
+      "depot": 77,
+      "lp_bound": 2499674.7899999996,
+      "n_fractional": 0
+    },
+    {
+      "depot": 24,
+      "lp_bound": 2498460.3540000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 52,
+      "lp_bound": 2498060.5440000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 61,
+      "lp_bound": 2496570.5820000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 671,
+      "lp_bound": 2496315.630000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 46,
+      "lp_bound": 2495984.4200000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 270,
+      "lp_bound": 2495535.6900000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 278,
+      "lp_bound": 2495398.2960000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 239,
+      "lp_bound": 2495319.3140000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 422,
+      "lp_bound": 2494922.4080000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 63,
+      "lp_bound": 2494004.0320000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 261,
+      "lp_bound": 2493571.1960000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 48,
+      "lp_bound": 2492218.172000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 455,
+      "lp_bound": 2491025.7860000012,
+      "n_fractional": 0
+    },
+    {
+      "depot": 55,
+      "lp_bound": 2488255.0760000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 251,
+      "lp_bound": 2487674.26,
+      "n_fractional": 0
+    },
+    {
+      "depot": 383,
+      "lp_bound": 2486637.846,
+      "n_fractional": 0
+    },
+    {
+      "depot": 248,
+      "lp_bound": 2485296.292000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 277,
+      "lp_bound": 2483276.608000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 327,
+      "lp_bound": 2482501.226000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 423,
+      "lp_bound": 2481544.5920000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 54,
+      "lp_bound": 2481228.7820000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 444,
+      "lp_bound": 2480397.288000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 247,
+      "lp_bound": 2480054.8880000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 280,
+      "lp_bound": 2480004.1140000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 56,
+      "lp_bound": 2479992.984,
+      "n_fractional": 0
+    },
+    {
+      "depot": 122,
+      "lp_bound": 2479748.616000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 119,
+      "lp_bound": 2478666.8140000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 275,
+      "lp_bound": 2478082.5280000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 238,
+      "lp_bound": 2478062.870000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 234,
+      "lp_bound": 2477710.2760000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 115,
+      "lp_bound": 2477604.696000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 416,
+      "lp_bound": 2476422.2020000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 279,
+      "lp_bound": 2476395.3980000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 331,
+      "lp_bound": 2474282.9600000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 50,
+      "lp_bound": 2473906.5540000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 655,
+      "lp_bound": 2473837.322000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 135,
+      "lp_bound": 2473687.6780000012,
+      "n_fractional": 0
+    },
+    {
+      "depot": 60,
+      "lp_bound": 2473612.9859999996,
+      "n_fractional": 0
+    },
+    {
+      "depot": 381,
+      "lp_bound": 2473502.9459999995,
+      "n_fractional": 0
+    },
+    {
+      "depot": 221,
+      "lp_bound": 2472815.0560000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 49,
+      "lp_bound": 2472717.220000001,
+      "n_fractional": 5
+    },
+    {
+      "depot": 336,
+      "lp_bound": 2472438.9400000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 35,
+      "lp_bound": 2472398.537000001,
+      "n_fractional": 5
+    },
+    {
+      "depot": 638,
+      "lp_bound": 2471387.776,
+      "n_fractional": 0
+    },
+    {
+      "depot": 421,
+      "lp_bound": 2471266.170000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 420,
+      "lp_bound": 2470874.5040000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 240,
+      "lp_bound": 2470715.054000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 34,
+      "lp_bound": 2470422.532000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 647,
+      "lp_bound": 2470262.356000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 656,
+      "lp_bound": 2470234.5260000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 250,
+      "lp_bound": 2469678.158,
+      "n_fractional": 0
+    },
+    {
+      "depot": 284,
+      "lp_bound": 2469458.8300000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 67,
+      "lp_bound": 2469300.3920000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 670,
+      "lp_bound": 2468749.8540000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 118,
+      "lp_bound": 2468608.806000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 237,
+      "lp_bound": 2468514.244000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 131,
+      "lp_bound": 2468316.642000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 116,
+      "lp_bound": 2468014.954000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 641,
+      "lp_bound": 2467781.972,
+      "n_fractional": 0
+    },
+    {
+      "depot": 648,
+      "lp_bound": 2467562.7300000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 660,
+      "lp_bound": 2467465.608,
+      "n_fractional": 0
+    },
+    {
+      "depot": 156,
+      "lp_bound": 2467465.5220000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 27,
+      "lp_bound": 2467384.0060000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 287,
+      "lp_bound": 2467286.184,
+      "n_fractional": 0
+    },
+    {
+      "depot": 329,
+      "lp_bound": 2467217.562,
+      "n_fractional": 0
+    },
+    {
+      "depot": 62,
+      "lp_bound": 2467056.3859999995,
+      "n_fractional": 0
+    },
+    {
+      "depot": 453,
+      "lp_bound": 2466522.2260000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 232,
+      "lp_bound": 2466425.1160000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 230,
+      "lp_bound": 2466034.2860000012,
+      "n_fractional": 0
+    },
+    {
+      "depot": 457,
+      "lp_bound": 2465944.1220000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 64,
+      "lp_bound": 2465572.4939999995,
+      "n_fractional": 0
+    },
+    {
+      "depot": 267,
+      "lp_bound": 2465520.290000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 644,
+      "lp_bound": 2465287.724000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 639,
+      "lp_bound": 2465115.3380000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 273,
+      "lp_bound": 2465112.028000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 235,
+      "lp_bound": 2464782.3400000012,
+      "n_fractional": 0
+    },
+    {
+      "depot": 127,
+      "lp_bound": 2464740.2200000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 244,
+      "lp_bound": 2464612.72,
+      "n_fractional": 0
+    },
+    {
+      "depot": 389,
+      "lp_bound": 2464588.7559999996,
+      "n_fractional": 0
+    },
+    {
+      "depot": 646,
+      "lp_bound": 2464020.654000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 447,
+      "lp_bound": 2463914.5519999997,
+      "n_fractional": 0
+    },
+    {
+      "depot": 501,
+      "lp_bound": 2463571.014000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 330,
+      "lp_bound": 2463263.586,
+      "n_fractional": 0
+    },
+    {
+      "depot": 661,
+      "lp_bound": 2462451.8800000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 74,
+      "lp_bound": 2461825.484,
+      "n_fractional": 0
+    },
+    {
+      "depot": 26,
+      "lp_bound": 2461660.706000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 272,
+      "lp_bound": 2461562.5760000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 335,
+      "lp_bound": 2461529.4760000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 252,
+      "lp_bound": 2461356.986000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 443,
+      "lp_bound": 2461261.5820000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 89,
+      "lp_bound": 2461162.108,
+      "n_fractional": 0
+    },
+    {
+      "depot": 236,
+      "lp_bound": 2461049.476000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 6,
+      "lp_bound": 2460757.93,
+      "n_fractional": 0
+    },
+    {
+      "depot": 636,
+      "lp_bound": 2460676.694,
+      "n_fractional": 0
+    },
+    {
+      "depot": 120,
+      "lp_bound": 2460643.580000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 65,
+      "lp_bound": 2460449.886,
+      "n_fractional": 0
+    },
+    {
+      "depot": 451,
+      "lp_bound": 2460247.222000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 264,
+      "lp_bound": 2459841.3019999997,
+      "n_fractional": 0
+    },
+    {
+      "depot": 78,
+      "lp_bound": 2459146.634000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 295,
+      "lp_bound": 2459003.8140000016,
+      "n_fractional": 4
+    },
+    {
+      "depot": 45,
+      "lp_bound": 2458835.6720000003,
+      "n_fractional": 5
+    },
+    {
+      "depot": 286,
+      "lp_bound": 2457853.696000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 386,
+      "lp_bound": 2457572.706999999,
+      "n_fractional": 9
+    },
+    {
+      "depot": 657,
+      "lp_bound": 2457210.524000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 651,
+      "lp_bound": 2457067.0120000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 133,
+      "lp_bound": 2456880.686000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 643,
+      "lp_bound": 2456820.1760000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 276,
+      "lp_bound": 2456722.926,
+      "n_fractional": 0
+    },
+    {
+      "depot": 243,
+      "lp_bound": 2456643.0460000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 233,
+      "lp_bound": 2456607.3960000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 387,
+      "lp_bound": 2455913.538000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 192,
+      "lp_bound": 2455727.7480000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 263,
+      "lp_bound": 2455420.368000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 138,
+      "lp_bound": 2454440.784000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 257,
+      "lp_bound": 2454362.4540000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 85,
+      "lp_bound": 2453293.5870000003,
+      "n_fractional": 5
+    },
+    {
+      "depot": 259,
+      "lp_bound": 2452981.4740000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 442,
+      "lp_bound": 2452937.2440000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 218,
+      "lp_bound": 2452745.566000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 75,
+      "lp_bound": 2452682.9,
+      "n_fractional": 0
+    },
+    {
+      "depot": 81,
+      "lp_bound": 2452380.648,
+      "n_fractional": 0
+    },
+    {
+      "depot": 220,
+      "lp_bound": 2451971.208000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 82,
+      "lp_bound": 2451957.514000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 231,
+      "lp_bound": 2451938.880000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 68,
+      "lp_bound": 2451789.8880000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 388,
+      "lp_bound": 2451599.078,
+      "n_fractional": 0
+    },
+    {
+      "depot": 431,
+      "lp_bound": 2451238.3080000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 301,
+      "lp_bound": 2450952.084,
+      "n_fractional": 0
+    },
+    {
+      "depot": 117,
+      "lp_bound": 2450858.862000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 149,
+      "lp_bound": 2450785.3580000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 333,
+      "lp_bound": 2450342.5780000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 498,
+      "lp_bound": 2450047.3580000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 153,
+      "lp_bound": 2449826.954000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 654,
+      "lp_bound": 2449718.8640000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 137,
+      "lp_bound": 2449691.228000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 223,
+      "lp_bound": 2449623.5720000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 188,
+      "lp_bound": 2449516.7120000017,
+      "n_fractional": 0
+    },
+    {
+      "depot": 473,
+      "lp_bound": 2449400.2120000017,
+      "n_fractional": 0
+    },
+    {
+      "depot": 617,
+      "lp_bound": 2448924.3320000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 296,
+      "lp_bound": 2448746.656,
+      "n_fractional": 0
+    },
+    {
+      "depot": 417,
+      "lp_bound": 2447809.250999999,
+      "n_fractional": 95
+    },
+    {
+      "depot": 503,
+      "lp_bound": 2447697.290000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 128,
+      "lp_bound": 2447474.3820000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 396,
+      "lp_bound": 2447327.4319999996,
+      "n_fractional": 0
+    },
+    {
+      "depot": 80,
+      "lp_bound": 2447192.1120000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 136,
+      "lp_bound": 2447187.606000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 7,
+      "lp_bound": 2447019.1780000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 391,
+      "lp_bound": 2446797.9160000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 614,
+      "lp_bound": 2445888.9220000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 575,
+      "lp_bound": 2445521.0720000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 332,
+      "lp_bound": 2445513.198,
+      "n_fractional": 0
+    },
+    {
+      "depot": 405,
+      "lp_bound": 2445000.582,
+      "n_fractional": 0
+    },
+    {
+      "depot": 195,
+      "lp_bound": 2444892.118000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 414,
+      "lp_bound": 2444827.8880000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 217,
+      "lp_bound": 2444330.5040000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 79,
+      "lp_bound": 2444113.5080000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 574,
+      "lp_bound": 2443941.052000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 208,
+      "lp_bound": 2443855.604000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 576,
+      "lp_bound": 2443337.832000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 460,
+      "lp_bound": 2443317.204000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 209,
+      "lp_bound": 2442955.3660000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 418,
+      "lp_bound": 2442794.3290000013,
+      "n_fractional": 95
+    },
+    {
+      "depot": 262,
+      "lp_bound": 2442755.692,
+      "n_fractional": 0
+    },
+    {
+      "depot": 658,
+      "lp_bound": 2442720.986000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 241,
+      "lp_bound": 2442476.3920000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 637,
+      "lp_bound": 2442208.0940000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 645,
+      "lp_bound": 2442085.4880000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 216,
+      "lp_bound": 2441923.6000000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 432,
+      "lp_bound": 2441779.7180000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 339,
+      "lp_bound": 2441674.9220000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 659,
+      "lp_bound": 2441362.5480000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 573,
+      "lp_bound": 2441153.1320000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 256,
+      "lp_bound": 2441099.2040000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 171,
+      "lp_bound": 2441002.3100000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 303,
+      "lp_bound": 2440822.8440000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 459,
+      "lp_bound": 2440795.2080000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 282,
+      "lp_bound": 2440390.266000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 456,
+      "lp_bound": 2440291.458000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 154,
+      "lp_bound": 2440238.340000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 289,
+      "lp_bound": 2440224.549999996,
+      "n_fractional": 0
+    },
+    {
+      "depot": 500,
+      "lp_bound": 2440064.420000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 609,
+      "lp_bound": 2439846.654000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 198,
+      "lp_bound": 2439805.41,
+      "n_fractional": 0
+    },
+    {
+      "depot": 285,
+      "lp_bound": 2439628.9420000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 347,
+      "lp_bound": 2439260.2820000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 142,
+      "lp_bound": 2439197.374000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 199,
+      "lp_bound": 2439177.9820000012,
+      "n_fractional": 0
+    },
+    {
+      "depot": 334,
+      "lp_bound": 2438470.8680000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 415,
+      "lp_bound": 2438461.7220000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 69,
+      "lp_bound": 2438371.148000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 266,
+      "lp_bound": 2438272.254,
+      "n_fractional": 0
+    },
+    {
+      "depot": 502,
+      "lp_bound": 2437600.964000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 294,
+      "lp_bound": 2437455.2140000006,
+      "n_fractional": 7
+    },
+    {
+      "depot": 181,
+      "lp_bound": 2437393.2280000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 640,
+      "lp_bound": 2437364.182,
+      "n_fractional": 0
+    },
+    {
+      "depot": 258,
+      "lp_bound": 2437301.4060000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 337,
+      "lp_bound": 2437022.890000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 429,
+      "lp_bound": 2436804.219000002,
+      "n_fractional": 65
+    },
+    {
+      "depot": 496,
+      "lp_bound": 2436769.1459999997,
+      "n_fractional": 0
+    },
+    {
+      "depot": 140,
+      "lp_bound": 2436716.3060000017,
+      "n_fractional": 0
+    },
+    {
+      "depot": 155,
+      "lp_bound": 2436593.488000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 302,
+      "lp_bound": 2436456.3140000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 495,
+      "lp_bound": 2436226.430000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 466,
+      "lp_bound": 2436042.9700000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 291,
+      "lp_bound": 2435770.0180000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 409,
+      "lp_bound": 2435529.438000002,
+      "n_fractional": 67
+    },
+    {
+      "depot": 200,
+      "lp_bound": 2435370.4140000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 304,
+      "lp_bound": 2435120.8140000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 57,
+      "lp_bound": 2434685.5900000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 307,
+      "lp_bound": 2434661.2559999996,
+      "n_fractional": 7
+    },
+    {
+      "depot": 397,
+      "lp_bound": 2434415.0159999966,
+      "n_fractional": 0
+    },
+    {
+      "depot": 288,
+      "lp_bound": 2434333.7180000003,
+      "n_fractional": 4
+    },
+    {
+      "depot": 338,
+      "lp_bound": 2434207.562000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 653,
+      "lp_bound": 2433857.6780000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 53,
+      "lp_bound": 2433673.111000001,
+      "n_fractional": 5
+    },
+    {
+      "depot": 71,
+      "lp_bound": 2433471.6159999995,
+      "n_fractional": 0
+    },
+    {
+      "depot": 504,
+      "lp_bound": 2432303.552,
+      "n_fractional": 0
+    },
+    {
+      "depot": 399,
+      "lp_bound": 2431996.1160000027,
+      "n_fractional": 0
+    },
+    {
+      "depot": 494,
+      "lp_bound": 2431349.1920000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 260,
+      "lp_bound": 2431271.0800000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 215,
+      "lp_bound": 2431202.2400000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 380,
+      "lp_bound": 2431017.0000000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 224,
+      "lp_bound": 2430911.756000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 227,
+      "lp_bound": 2430789.556000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 173,
+      "lp_bound": 2430777.2060000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 540,
+      "lp_bound": 2430707.704000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 132,
+      "lp_bound": 2430619.6980000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 468,
+      "lp_bound": 2430511.4960000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 319,
+      "lp_bound": 2430500.5400000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 129,
+      "lp_bound": 2430313.886000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 642,
+      "lp_bound": 2429959.0020000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 458,
+      "lp_bound": 2429876.404000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 150,
+      "lp_bound": 2429816.1960000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 410,
+      "lp_bound": 2429720.7719999994,
+      "n_fractional": 0
+    },
+    {
+      "depot": 508,
+      "lp_bound": 2429573.0420000018,
+      "n_fractional": 0
+    },
+    {
+      "depot": 189,
+      "lp_bound": 2429483.0520000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 206,
+      "lp_bound": 2429233.8760000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 94,
+      "lp_bound": 2428927.90575,
+      "n_fractional": 15
+    },
+    {
+      "depot": 83,
+      "lp_bound": 2428868.496000002,
+      "n_fractional": 23
+    },
+    {
+      "depot": 194,
+      "lp_bound": 2428863.5520000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 59,
+      "lp_bound": 2428589.228,
+      "n_fractional": 0
+    },
+    {
+      "depot": 207,
+      "lp_bound": 2428248.0740000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 499,
+      "lp_bound": 2428144.070000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 197,
+      "lp_bound": 2428121.7780000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 212,
+      "lp_bound": 2428103.372000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 615,
+      "lp_bound": 2428094.026000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 476,
+      "lp_bound": 2427602.476000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 281,
+      "lp_bound": 2427488.8540000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 172,
+      "lp_bound": 2427259.228000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 246,
+      "lp_bound": 2426787.8299999996,
+      "n_fractional": 0
+    },
+    {
+      "depot": 487,
+      "lp_bound": 2426528.208000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 404,
+      "lp_bound": 2426371.972000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 555,
+      "lp_bound": 2426320.584000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 474,
+      "lp_bound": 2426090.8020000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 66,
+      "lp_bound": 2426065.914666666,
+      "n_fractional": 10
+    },
+    {
+      "depot": 406,
+      "lp_bound": 2425741.7720000017,
+      "n_fractional": 0
+    },
+    {
+      "depot": 134,
+      "lp_bound": 2425418.7320000012,
+      "n_fractional": 0
+    },
+    {
+      "depot": 326,
+      "lp_bound": 2425018.3680000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 619,
+      "lp_bound": 2424993.268000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 190,
+      "lp_bound": 2424859.9940000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 426,
+      "lp_bound": 2424775.5980000016,
+      "n_fractional": 63
+    },
+    {
+      "depot": 70,
+      "lp_bound": 2424323.4560000007,
+      "n_fractional": 13
+    },
+    {
+      "depot": 225,
+      "lp_bound": 2424068.6920000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 369,
+      "lp_bound": 2424064.8660000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 428,
+      "lp_bound": 2424001.8950000023,
+      "n_fractional": 67
+    },
+    {
+      "depot": 58,
+      "lp_bound": 2423734.4700000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 245,
+      "lp_bound": 2423649.0520000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 72,
+      "lp_bound": 2423606.7977500004,
+      "n_fractional": 15
+    },
+    {
+      "depot": 201,
+      "lp_bound": 2423373.172000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 377,
+      "lp_bound": 2423123.692,
+      "n_fractional": 0
+    },
+    {
+      "depot": 379,
+      "lp_bound": 2422985.0980000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 219,
+      "lp_bound": 2422820.472000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 650,
+      "lp_bound": 2422495.100000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 375,
+      "lp_bound": 2422478.9800000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 585,
+      "lp_bound": 2422407.256000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 398,
+      "lp_bound": 2422388.0039999993,
+      "n_fractional": 0
+    },
+    {
+      "depot": 552,
+      "lp_bound": 2421860.4320000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 401,
+      "lp_bound": 2421771.6080000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 148,
+      "lp_bound": 2421547.920000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 228,
+      "lp_bound": 2421496.908000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 407,
+      "lp_bound": 2421436.252000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 73,
+      "lp_bound": 2420802.904,
+      "n_fractional": 0
+    },
+    {
+      "depot": 402,
+      "lp_bound": 2420798.844000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 367,
+      "lp_bound": 2420745.5660000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 372,
+      "lp_bound": 2420700.7920000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 408,
+      "lp_bound": 2420685.48,
+      "n_fractional": 0
+    },
+    {
+      "depot": 370,
+      "lp_bound": 2420609.2079999987,
+      "n_fractional": 0
+    },
+    {
+      "depot": 450,
+      "lp_bound": 2420608.4520000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 583,
+      "lp_bound": 2420531.4300000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 187,
+      "lp_bound": 2420518.622000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 351,
+      "lp_bound": 2420402.73,
+      "n_fractional": 0
+    },
+    {
+      "depot": 378,
+      "lp_bound": 2420270.419999993,
+      "n_fractional": 0
+    },
+    {
+      "depot": 157,
+      "lp_bound": 2420232.830000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 616,
+      "lp_bound": 2420104.176000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 76,
+      "lp_bound": 2419694.8159999996,
+      "n_fractional": 0
+    },
+    {
+      "depot": 400,
+      "lp_bound": 2419662.0480000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 514,
+      "lp_bound": 2419517.180000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 95,
+      "lp_bound": 2419508.7100000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 184,
+      "lp_bound": 2419013.0560000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 202,
+      "lp_bound": 2418796.528000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 205,
+      "lp_bound": 2418425.8340000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 506,
+      "lp_bound": 2418346.422000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 427,
+      "lp_bound": 2417963.616000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 430,
+      "lp_bound": 2417925.7640000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 425,
+      "lp_bound": 2417796.8420000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 413,
+      "lp_bound": 2417691.6200000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 293,
+      "lp_bound": 2417090.795999998,
+      "n_fractional": 0
+    },
+    {
+      "depot": 196,
+      "lp_bound": 2416965.354000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 204,
+      "lp_bound": 2416926.680000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 445,
+      "lp_bound": 2416902.6160000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 542,
+      "lp_bound": 2416309.626,
+      "n_fractional": 0
+    },
+    {
+      "depot": 297,
+      "lp_bound": 2416112.732000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 229,
+      "lp_bound": 2415963.9940000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 392,
+      "lp_bound": 2415890.6479999996,
+      "n_fractional": 0
+    },
+    {
+      "depot": 610,
+      "lp_bound": 2415874.944000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 214,
+      "lp_bound": 2415790.5740000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 411,
+      "lp_bound": 2415669.9560000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 226,
+      "lp_bound": 2415646.612000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 403,
+      "lp_bound": 2415492.140000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 625,
+      "lp_bound": 2415453.0065000006,
+      "n_fractional": 7
+    },
+    {
+      "depot": 472,
+      "lp_bound": 2415337.064000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 222,
+      "lp_bound": 2415231.324000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 130,
+      "lp_bound": 2414820.626000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 349,
+      "lp_bound": 2414688.8980000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 579,
+      "lp_bound": 2414326.9339999994,
+      "n_fractional": 0
+    },
+    {
+      "depot": 283,
+      "lp_bound": 2414322.560000001,
+      "n_fractional": 3
+    },
+    {
+      "depot": 308,
+      "lp_bound": 2414272.8120000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 193,
+      "lp_bound": 2413695.0920000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 371,
+      "lp_bound": 2413448.5000000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 376,
+      "lp_bound": 2413118.4880000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 366,
+      "lp_bound": 2412880.5120000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 147,
+      "lp_bound": 2412876.130000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 182,
+      "lp_bound": 2412729.860000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 464,
+      "lp_bound": 2412657.800000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 185,
+      "lp_bound": 2412482.732000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 255,
+      "lp_bound": 2412167.698000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 492,
+      "lp_bound": 2412117.080000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 139,
+      "lp_bound": 2411883.752000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 175,
+      "lp_bound": 2411823.2900000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 186,
+      "lp_bound": 2411814.218,
+      "n_fractional": 0
+    },
+    {
+      "depot": 652,
+      "lp_bound": 2411450.520000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 394,
+      "lp_bound": 2411393.172,
+      "n_fractional": 0
+    },
+    {
+      "depot": 254,
+      "lp_bound": 2411192.734000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 511,
+      "lp_bound": 2410977.618000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 572,
+      "lp_bound": 2410921.0160000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 145,
+      "lp_bound": 2410743.634000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 364,
+      "lp_bound": 2410663.308000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 497,
+      "lp_bound": 2409842.002000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 176,
+      "lp_bound": 2409748.0080000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 88,
+      "lp_bound": 2409627.8665,
+      "n_fractional": 7
+    },
+    {
+      "depot": 191,
+      "lp_bound": 2409508.732000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 515,
+      "lp_bound": 2409426.0320000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 538,
+      "lp_bound": 2409375.1720000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 203,
+      "lp_bound": 2409201.828000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 628,
+      "lp_bound": 2408992.4740000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 490,
+      "lp_bound": 2408864.810000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 412,
+      "lp_bound": 2408772.9720000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 328,
+      "lp_bound": 2408582.88,
+      "n_fractional": 0
+    },
+    {
+      "depot": 352,
+      "lp_bound": 2408476.735999999,
+      "n_fractional": 0
+    },
+    {
+      "depot": 350,
+      "lp_bound": 2408100.534000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 446,
+      "lp_bound": 2407904.7120000017,
+      "n_fractional": 0
+    },
+    {
+      "depot": 353,
+      "lp_bound": 2407870.593999999,
+      "n_fractional": 0
+    },
+    {
+      "depot": 292,
+      "lp_bound": 2407510.6369999996,
+      "n_fractional": 7
+    },
+    {
+      "depot": 424,
+      "lp_bound": 2406689.9500000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 1,
+      "lp_bound": 2406542.018000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 613,
+      "lp_bound": 2406379.326500001,
+      "n_fractional": 7
+    },
+    {
+      "depot": 491,
+      "lp_bound": 2406133.2420000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 471,
+      "lp_bound": 2405994.202000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 368,
+      "lp_bound": 2405551.858000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 211,
+      "lp_bound": 2404912.980000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 146,
+      "lp_bound": 2404586.6520000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 505,
+      "lp_bound": 2404541.5460000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 373,
+      "lp_bound": 2404271.5840000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 265,
+      "lp_bound": 2404102.7480000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 320,
+      "lp_bound": 2403720.616000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 485,
+      "lp_bound": 2403511.1720000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 374,
+      "lp_bound": 2403368.4620000008,
+      "n_fractional": 0
+    },
+    {
+      "depot": 606,
+      "lp_bound": 2403293.3240000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 151,
+      "lp_bound": 2403257.7600000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 183,
+      "lp_bound": 2403242.004000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 543,
+      "lp_bound": 2402116.1900000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 611,
+      "lp_bound": 2401809.5880000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 623,
+      "lp_bound": 2401777.5945000006,
+      "n_fractional": 7
+    },
+    {
+      "depot": 395,
+      "lp_bound": 2401771.464,
+      "n_fractional": 0
+    },
+    {
+      "depot": 90,
+      "lp_bound": 2401193.9745000005,
+      "n_fractional": 7
+    },
+    {
+      "depot": 618,
+      "lp_bound": 2400663.4240000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 584,
+      "lp_bound": 2400139.8780000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 507,
+      "lp_bound": 2399813.600000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 554,
+      "lp_bound": 2399787.1380000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 470,
+      "lp_bound": 2399700.3420000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 624,
+      "lp_bound": 2399647.7165,
+      "n_fractional": 7
+    },
+    {
+      "depot": 475,
+      "lp_bound": 2399476.8160000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 309,
+      "lp_bound": 2398947.666,
+      "n_fractional": 11
+    },
+    {
+      "depot": 612,
+      "lp_bound": 2398716.100000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 5,
+      "lp_bound": 2398255.1830000007,
+      "n_fractional": 3
+    },
+    {
+      "depot": 581,
+      "lp_bound": 2397996.2060000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 582,
+      "lp_bound": 2397902.1380000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 449,
+      "lp_bound": 2397130.9060000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 477,
+      "lp_bound": 2397079.972000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 604,
+      "lp_bound": 2396792.068000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 510,
+      "lp_bound": 2396568.896000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 348,
+      "lp_bound": 2396483.4380000043,
+      "n_fractional": 0
+    },
+    {
+      "depot": 363,
+      "lp_bound": 2396471.9540000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 463,
+      "lp_bound": 2396165.496000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 4,
+      "lp_bound": 2396037.8850000002,
+      "n_fractional": 3
+    },
+    {
+      "depot": 488,
+      "lp_bound": 2395907.176000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 170,
+      "lp_bound": 2395409.5260000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 17,
+      "lp_bound": 2395193.5250000013,
+      "n_fractional": 5
+    },
+    {
+      "depot": 580,
+      "lp_bound": 2394785.924000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 362,
+      "lp_bound": 2394332.2940000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 622,
+      "lp_bound": 2394288.2325000004,
+      "n_fractional": 7
+    },
+    {
+      "depot": 390,
+      "lp_bound": 2393788.968000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 318,
+      "lp_bound": 2393771.2600000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 316,
+      "lp_bound": 2393518.1500000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 544,
+      "lp_bound": 2393508.5920000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 317,
+      "lp_bound": 2393261.4680000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 467,
+      "lp_bound": 2393194.160000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 169,
+      "lp_bound": 2392871.258000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 87,
+      "lp_bound": 2392811.8979999996,
+      "n_fractional": 0
+    },
+    {
+      "depot": 486,
+      "lp_bound": 2392216.288,
+      "n_fractional": 0
+    },
+    {
+      "depot": 545,
+      "lp_bound": 2391386.8450000007,
+      "n_fractional": 3
+    },
+    {
+      "depot": 620,
+      "lp_bound": 2391202.352500001,
+      "n_fractional": 7
+    },
+    {
+      "depot": 462,
+      "lp_bound": 2391201.0340000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 469,
+      "lp_bound": 2390763.338,
+      "n_fractional": 0
+    },
+    {
+      "depot": 465,
+      "lp_bound": 2390617.986000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 123,
+      "lp_bound": 2390602.0880000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 393,
+      "lp_bound": 2390456.368000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 360,
+      "lp_bound": 2390076.2360000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 539,
+      "lp_bound": 2389992.0040000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 484,
+      "lp_bound": 2389779.352000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 312,
+      "lp_bound": 2389126.5840000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 621,
+      "lp_bound": 2388856.854000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 210,
+      "lp_bound": 2388856.0800000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 541,
+      "lp_bound": 2388807.556000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 141,
+      "lp_bound": 2388800.0200000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 550,
+      "lp_bound": 2388322.224,
+      "n_fractional": 0
+    },
+    {
+      "depot": 268,
+      "lp_bound": 2388092.220000003,
+      "n_fractional": 75
+    },
+    {
+      "depot": 300,
+      "lp_bound": 2387953.2120000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 322,
+      "lp_bound": 2387261.2720000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 605,
+      "lp_bound": 2387150.1040000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 483,
+      "lp_bound": 2387141.308,
+      "n_fractional": 0
+    },
+    {
+      "depot": 608,
+      "lp_bound": 2386916.210000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 213,
+      "lp_bound": 2386690.234,
+      "n_fractional": 0
+    },
+    {
+      "depot": 493,
+      "lp_bound": 2386609.9120000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 126,
+      "lp_bound": 2386320.5840000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 93,
+      "lp_bound": 2386129.038,
+      "n_fractional": 0
+    },
+    {
+      "depot": 516,
+      "lp_bound": 2385969.214000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 91,
+      "lp_bound": 2385789.2745000017,
+      "n_fractional": 7
+    },
+    {
+      "depot": 124,
+      "lp_bound": 2385578.5400000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 346,
+      "lp_bound": 2385287.9540000064,
+      "n_fractional": 0
+    },
+    {
+      "depot": 161,
+      "lp_bound": 2385282.8000000017,
+      "n_fractional": 0
+    },
+    {
+      "depot": 178,
+      "lp_bound": 2385276.0640000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 2,
+      "lp_bound": 2385019.1340000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 242,
+      "lp_bound": 2385014.534000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 97,
+      "lp_bound": 2384980.1100000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 365,
+      "lp_bound": 2384601.2760000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 269,
+      "lp_bound": 2383370.0160000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 547,
+      "lp_bound": 2383143.807600001,
+      "n_fractional": 8
+    },
+    {
+      "depot": 311,
+      "lp_bound": 2382312.5280000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 601,
+      "lp_bound": 2382248.0920000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 92,
+      "lp_bound": 2382165.908000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 125,
+      "lp_bound": 2382087.3740000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 180,
+      "lp_bound": 2381406.3520000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 321,
+      "lp_bound": 2381150.1440000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 361,
+      "lp_bound": 2381106.660000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 96,
+      "lp_bound": 2381045.796000003,
+      "n_fractional": 6
+    },
+    {
+      "depot": 354,
+      "lp_bound": 2380475.1499999994,
+      "n_fractional": 0
+    },
+    {
+      "depot": 512,
+      "lp_bound": 2380119.650000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 158,
+      "lp_bound": 2380113.676000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 179,
+      "lp_bound": 2379961.724000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 489,
+      "lp_bound": 2379786.012000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 567,
+      "lp_bound": 2379363.1800000034,
+      "n_fractional": 0
+    },
+    {
+      "depot": 482,
+      "lp_bound": 2378875.0640000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 8,
+      "lp_bound": 2378777.2910000007,
+      "n_fractional": 3
+    },
+    {
+      "depot": 3,
+      "lp_bound": 2378646.8590000016,
+      "n_fractional": 3
+    },
+    {
+      "depot": 603,
+      "lp_bound": 2378113.528,
+      "n_fractional": 0
+    },
+    {
+      "depot": 323,
+      "lp_bound": 2377667.1940000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 315,
+      "lp_bound": 2374908.582,
+      "n_fractional": 0
+    },
+    {
+      "depot": 509,
+      "lp_bound": 2374730.4260000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 551,
+      "lp_bound": 2374570.5919999992,
+      "n_fractional": 0
+    },
+    {
+      "depot": 448,
+      "lp_bound": 2374439.516000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 144,
+      "lp_bound": 2374020.5320000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 314,
+      "lp_bound": 2372306.766000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 159,
+      "lp_bound": 2372266.2980000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 568,
+      "lp_bound": 2371609.800000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 513,
+      "lp_bound": 2371559.7600000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 578,
+      "lp_bound": 2370389.578,
+      "n_fractional": 0
+    },
+    {
+      "depot": 114,
+      "lp_bound": 2369497.9760000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 9,
+      "lp_bound": 2369142.4880000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 298,
+      "lp_bound": 2368713.374000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 577,
+      "lp_bound": 2367284.3800000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 357,
+      "lp_bound": 2367223.238000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 553,
+      "lp_bound": 2367188.14,
+      "n_fractional": 5
+    },
+    {
+      "depot": 343,
+      "lp_bound": 2366910.266000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 10,
+      "lp_bound": 2366871.7920000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 359,
+      "lp_bound": 2366835.190000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 325,
+      "lp_bound": 2366818.542000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 342,
+      "lp_bound": 2366618.741999998,
+      "n_fractional": 0
+    },
+    {
+      "depot": 600,
+      "lp_bound": 2366586.402000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 168,
+      "lp_bound": 2366585.296000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 358,
+      "lp_bound": 2366045.0140000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 313,
+      "lp_bound": 2365933.75,
+      "n_fractional": 0
+    },
+    {
+      "depot": 597,
+      "lp_bound": 2365572.5440000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 306,
+      "lp_bound": 2365480.1020000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 112,
+      "lp_bound": 2364874.064000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 356,
+      "lp_bound": 2364425.3500000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 174,
+      "lp_bound": 2364197.3640000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 564,
+      "lp_bound": 2364079.0320000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 602,
+      "lp_bound": 2363963.540000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 549,
+      "lp_bound": 2363020.2860000012,
+      "n_fractional": 0
+    },
+    {
+      "depot": 441,
+      "lp_bound": 2361897.18,
+      "n_fractional": 0
+    },
+    {
+      "depot": 478,
+      "lp_bound": 2361867.6820000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 548,
+      "lp_bound": 2361781.4420000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 113,
+      "lp_bound": 2361548.6220000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 341,
+      "lp_bound": 2361129.7980000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 152,
+      "lp_bound": 2361107.2400000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 517,
+      "lp_bound": 2360464.582000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 344,
+      "lp_bound": 2360059.7739999997,
+      "n_fractional": 0
+    },
+    {
+      "depot": 310,
+      "lp_bound": 2359878.7199999997,
+      "n_fractional": 0
+    },
+    {
+      "depot": 299,
+      "lp_bound": 2359696.269999996,
+      "n_fractional": 0
+    },
+    {
+      "depot": 345,
+      "lp_bound": 2359591.8700000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 324,
+      "lp_bound": 2359116.966000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 627,
+      "lp_bound": 2358979.7220000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 434,
+      "lp_bound": 2358231.5340000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 480,
+      "lp_bound": 2357549.0780000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 177,
+      "lp_bound": 2357531.7200000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 546,
+      "lp_bound": 2356813.2880000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 479,
+      "lp_bound": 2356486.224000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 355,
+      "lp_bound": 2355921.4220000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 440,
+      "lp_bound": 2353994.918000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 121,
+      "lp_bound": 2352998.522000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 558,
+      "lp_bound": 2352905.3100000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 305,
+      "lp_bound": 2352492.870000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 436,
+      "lp_bound": 2351925.284000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 629,
+      "lp_bound": 2350263.3665000014,
+      "n_fractional": 7
+    },
+    {
+      "depot": 566,
+      "lp_bound": 2349832.3859999995,
+      "n_fractional": 0
+    },
+    {
+      "depot": 437,
+      "lp_bound": 2349519.0780000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 528,
+      "lp_bound": 2348579.8280000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 481,
+      "lp_bound": 2348391.4460000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 11,
+      "lp_bound": 2347203.9040000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 570,
+      "lp_bound": 2346888.2660000008,
+      "n_fractional": 0
+    },
+    {
+      "depot": 626,
+      "lp_bound": 2346563.194000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 15,
+      "lp_bound": 2345131.1225000015,
+      "n_fractional": 7
+    },
+    {
+      "depot": 111,
+      "lp_bound": 2344842.296,
+      "n_fractional": 0
+    },
+    {
+      "depot": 162,
+      "lp_bound": 2344821.774,
+      "n_fractional": 0
+    },
+    {
+      "depot": 16,
+      "lp_bound": 2344630.3225000002,
+      "n_fractional": 7
+    },
+    {
+      "depot": 519,
+      "lp_bound": 2344491.004000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 435,
+      "lp_bound": 2344124.0300000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 518,
+      "lp_bound": 2343204.1940000015,
+      "n_fractional": 0
+    },
+    {
+      "depot": 438,
+      "lp_bound": 2343048.110000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 632,
+      "lp_bound": 2341455.4480000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 607,
+      "lp_bound": 2340506.756000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 86,
+      "lp_bound": 2340457.650500001,
+      "n_fractional": 7
+    },
+    {
+      "depot": 163,
+      "lp_bound": 2339505.5820000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 556,
+      "lp_bound": 2339418.2065000003,
+      "n_fractional": 7
+    },
+    {
+      "depot": 586,
+      "lp_bound": 2339062.6660000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 633,
+      "lp_bound": 2338878.9919999996,
+      "n_fractional": 0
+    },
+    {
+      "depot": 14,
+      "lp_bound": 2336898.6545000006,
+      "n_fractional": 7
+    },
+    {
+      "depot": 599,
+      "lp_bound": 2336782.5480000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 166,
+      "lp_bound": 2336728.614000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 167,
+      "lp_bound": 2336619.7820000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 521,
+      "lp_bound": 2336459.096000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 587,
+      "lp_bound": 2336385.4820000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 526,
+      "lp_bound": 2336231.848000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 529,
+      "lp_bound": 2336199.5080000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 164,
+      "lp_bound": 2334464.910000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 143,
+      "lp_bound": 2334290.152000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 565,
+      "lp_bound": 2333836.573666669,
+      "n_fractional": 9
+    },
+    {
+      "depot": 160,
+      "lp_bound": 2333174.768000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 439,
+      "lp_bound": 2332895.0300000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 433,
+      "lp_bound": 2332594.2460000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 340,
+      "lp_bound": 2332238.293999997,
+      "n_fractional": 0
+    },
+    {
+      "depot": 165,
+      "lp_bound": 2331961.270000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 527,
+      "lp_bound": 2331757.060000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 560,
+      "lp_bound": 2331618.500000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 13,
+      "lp_bound": 2328433.838500001,
+      "n_fractional": 7
+    },
+    {
+      "depot": 100,
+      "lp_bound": 2327306.9899999998,
+      "n_fractional": 0
+    },
+    {
+      "depot": 12,
+      "lp_bound": 2325031.454500001,
+      "n_fractional": 7
+    },
+    {
+      "depot": 520,
+      "lp_bound": 2324639.822000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 595,
+      "lp_bound": 2324002.6760000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 591,
+      "lp_bound": 2323054.0040000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 635,
+      "lp_bound": 2321573.4400000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 522,
+      "lp_bound": 2318818.2740000007,
+      "n_fractional": 0
+    },
+    {
+      "depot": 524,
+      "lp_bound": 2318710.156000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 106,
+      "lp_bound": 2318107.2640000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 596,
+      "lp_bound": 2317223.5480000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 634,
+      "lp_bound": 2316729.960000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 569,
+      "lp_bound": 2316551.128000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 598,
+      "lp_bound": 2316123.1820000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 98,
+      "lp_bound": 2316043.8860000004,
+      "n_fractional": 0
+    },
+    {
+      "depot": 104,
+      "lp_bound": 2315174.432000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 99,
+      "lp_bound": 2314140.2960000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 571,
+      "lp_bound": 2309980.4580000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 590,
+      "lp_bound": 2309250.2520000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 537,
+      "lp_bound": 2308635.6840000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 593,
+      "lp_bound": 2308626.5560000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 525,
+      "lp_bound": 2307739.4680000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 523,
+      "lp_bound": 2307084.0520000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 561,
+      "lp_bound": 2306801.2959999987,
+      "n_fractional": 0
+    },
+    {
+      "depot": 559,
+      "lp_bound": 2306469.5420000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 533,
+      "lp_bound": 2306003.636000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 631,
+      "lp_bound": 2305852.8640000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 589,
+      "lp_bound": 2304811.5800000005,
+      "n_fractional": 0
+    },
+    {
+      "depot": 588,
+      "lp_bound": 2301746.108000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 557,
+      "lp_bound": 2301687.996000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 592,
+      "lp_bound": 2300774.0280000013,
+      "n_fractional": 0
+    },
+    {
+      "depot": 532,
+      "lp_bound": 2300092.244000002,
+      "n_fractional": 0
+    },
+    {
+      "depot": 105,
+      "lp_bound": 2297616.4160000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 630,
+      "lp_bound": 2297222.824000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 594,
+      "lp_bound": 2296447.372000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 101,
+      "lp_bound": 2293184.0700000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 531,
+      "lp_bound": 2290769.532000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 562,
+      "lp_bound": 2288096.4480000003,
+      "n_fractional": 0
+    },
+    {
+      "depot": 536,
+      "lp_bound": 2284032.412000001,
+      "n_fractional": 0
+    },
+    {
+      "depot": 563,
+      "lp_bound": 2283809.7280000006,
+      "n_fractional": 0
+    },
+    {
+      "depot": 535,
+      "lp_bound": 2279888.5000000014,
+      "n_fractional": 0
+    },
+    {
+      "depot": 534,
+      "lp_bound": 2275676.9160000016,
+      "n_fractional": 0
+    },
+    {
+      "depot": 530,
+      "lp_bound": 2268559.684000001,
+      "n_fractional": 0
+    }
+  ]
+}

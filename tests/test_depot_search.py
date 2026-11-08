@@ -76,3 +76,17 @@ def test_search_depots_matches_enumeration(medium):
     assert result.best.breakdown["profit"] == pytest.approx(best, abs=1e-4)
     assert result.certified
     assert evaluate(medium, result.best.network)["profit"] == pytest.approx(best, abs=1e-4)
+
+
+def test_reference_best_result_is_feasible(data):
+    import json
+    from pathlib import Path
+
+    from scm.io import load_network
+
+    path = Path("results/milp_best.json")
+    raw = json.loads(path.read_text())
+    net = load_network(path)
+    again = evaluate(data, net)
+    assert again["profit"] == pytest.approx(raw["breakdown"]["profit"], abs=1e-6)
+    assert raw["certificate"]["certified_over_all_depots"] is True

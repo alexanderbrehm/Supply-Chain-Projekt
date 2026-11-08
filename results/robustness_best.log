@@ -1,0 +1,21 @@
+base network: depot=664, satellites=[77, 122, 271, 419, 574]
+base candidates: 665
+route pool will be rebuilt for every scenario
+
+=== pessimistisch: Rohertrag x0.90, km-Kosten x1.10 ===
+existing network: profit=1.5763 M EUR, stores=117, satellites=5
+scenario pool: 118730 routes (5.5s)
+  LP bounds: 50/665 depots (21s)
+  LP bounds: 100/665 depots (35s)
+  LP bounds: 150/665 depots (44s)
+  LP bounds: 200/665 depots (54s)
+  LP bounds: 250/665 depots (75s)
+  LP bounds: 300/665 depots (114s)
+  LP bounds: 350/665 depots (144s)
+  LP bounds: 400/665 depots (166s)
+  LP bounds: 450/665 depots (174s)
+  LP bounds: 500/665 depots (180s)
+  LP bounds: 550/665 depots (185s)
+  LP bounds: 600/665 depots (190s)
+  LP bounds: 650/665 depots (195s)
+  MILP depot 419: bound=1,656,014.23, profit=1,651,767.87, kOptimal, 36.6s

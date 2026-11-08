@@ -3,12 +3,13 @@
 Usage examples
 --------------
 python run_robustness.py --base results/milp_104.json --candidates 104
-python run_robustness.py --base results/milp_104.json --depot-search
+python run_robustness.py --base results/milp_best.json --free-depot
 
 The script writes one JSON file per scenario and a combined summary.  The
-``--depot-search`` option additionally rebuilds the analytical baseline on the
-scenario data and uses its depot for the MILP; this tests whether a different
-central warehouse would have been better.
+``--free-depot`` option re-optimises the depot as well: LP bounds for every
+depot on the scenario data, then exact MILPs in bound order (see
+``scm.depot_search``).  The older ``--depot-search`` option rebuilds the
+analytical baseline on the scenario data and only tests its depot.
 """
 from __future__ import annotations
 
@@ -20,6 +21,7 @@ from pathlib import Path
 from scm.analysis import scenario_breakdown
 from scm.baseline import build_baseline
 from scm.data import load_data
+from scm.depot_search import search_depots
 from scm.io import load_network, same_network, save_json
 from scm.milp import solve_milp
 from scm.network import Network
@@ -83,6 +85,11 @@ def main() -> None:
         "--depot-search",
         action="store_true",
         help="rebuild the analytical baseline on the scenario data and test its depot",
+    )
+    ap.add_argument(
+        "--free-depot",
+        action="store_true",
+        help="re-optimise the depot too (LP bounds for all depots + exact MILPs)",
     )
     args = ap.parse_args()
 
@@ -154,15 +161,32 @@ def main() -> None:
                     initial = candidate
                     initial_profit = candidate_profit
                     print(f"warm start: {warm} ({candidate_profit/1e6:.4f} M EUR)", flush=True)
-        result = solve_milp(
+        fixed = solve_milp(
             sdata,
             pool,
             depot,
             time_limit=args.time_limit,
             mip_gap=args.mip_gap,
-            verbose=True,
+            verbose=False,
             initial=initial,
         )
+        result = fixed
+        search = None
+        if args.free_depot:
+            search = search_depots(
+                sdata,
+                pool,
+                sorted({r.warehouse for r in pool}),
+                time_limit=args.time_limit,
+                verbose=True,
+            )
+            if search.best.breakdown["profit"] > fixed.breakdown["profit"] + 1e-6:
+                result = search.best
+            print(
+                f"fixed depot {depot}: {fixed.breakdown['profit']/1e6:.4f} M EUR; "
+                f"best depot {result.network.depot}: {result.breakdown['profit']/1e6:.4f} M EUR, "
+                f"certified={search.certified}"
+            )
         print(
             f"re-optimised: profit={result.breakdown['profit']/1e6:.4f} M EUR, "
             f"stores={len(result.network.stores)}, "
@@ -195,6 +219,18 @@ def main() -> None:
             "runtime_s": result.runtime_s,
             "n_routes_pool": result.n_routes,
         }
+        payload["fixed_depot_profit"] = fixed.breakdown["profit"]
+        payload["fixed_depot_status"] = fixed.status
+        payload["fixed_depot_mip_gap"] = fixed.mip_gap
+        if search is not None:
+            payload["depot_search"] = {
+                "certified_over_all_depots": search.certified,
+                "solved": search.solved,
+                "top_bounds": [
+                    {"depot": b.depot, "lp_bound": b.bound} for b in search.bounds[:10]
+                ],
+                "runtime_s": search.runtime_s,
+            }
         if baseline_result is not None:
             payload["analytical_baseline_breakdown"] = baseline_result
             payload["analytical_baseline_depot"] = depot
@@ -211,9 +247,11 @@ def main() -> None:
             "existing_depot": base_net.depot,
             "optimized_depot": result.network.depot,
             "network_identical": identical,
+            "fixed_depot_profit": fixed.breakdown["profit"],
+            "certified_over_all_depots": None if search is None else search.certified,
             "mip_gap": result.mip_gap,
             "status": result.status,
-            "runtime_s": result.runtime_s,
+            "runtime_s": result.runtime_s if search is None else fixed.runtime_s + search.runtime_s,
             "n_routes_pool": result.n_routes,
             "candidate_count": len(base_candidates),
         }

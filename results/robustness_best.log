@@ -19,3 +19,11 @@ scenario pool: 118730 routes (5.5s)
   LP bounds: 600/665 depots (190s)
   LP bounds: 650/665 depots (195s)
   MILP depot 419: bound=1,656,014.23, profit=1,651,767.87, kOptimal, 36.6s
+  MILP depot 455: bound=1,655,812.72, profit=1,651,567.62, kOptimal, 41.9s
+fixed depot 664: 1.6453 M EUR; best depot 419: 1.6518 M EUR, certified=True
+re-optimised: profit=1.6518 M EUR, stores=88, satellites=[81, 331, 574], status=kOptimal, gap=0.00%, runtime=36.6s
+network identical to base: False
+
+=== optimistisch: Rohertrag x1.10, km-Kosten x0.90 ===
+existing network: profit=3.5263 M EUR, stores=117, satellites=5
+scenario pool: 220909 routes (9.3s)
